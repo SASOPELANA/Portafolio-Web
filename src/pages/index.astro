@@ -1,0 +1,69 @@
+---
+import Welcome from "../components/Welcome.astro";
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import LinkedInIcon from "../components/icons/Linkendin.astro";
+import SocialPill from "../components/SocialPill.astro";
+import GitHubIcon from "../components/icons/GitHub.astro";
+import GmailIcon from "../components/icons/Mail.astro";
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout
+  title="Portafolio de Sergio - Desarrolador y Programador Web"
+  description="Contrata a SergioDev para crear tus aplicaciones web y contenido. Estudiante de la Tecnicatura Universitaria en Programación - UTN"
+>
+  <main>
+    <section class="w-full lg:w-[740px] mx-auto py-44">
+      <img
+        class="rounded-full size-12 mb-4"
+        src="../../public/imagen/sergio.jpeg"
+        alt="sergio photo"
+      />
+      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
+        Hola, soy Sergio <a
+          href="https:www.linkedin.com/in/sergio-alejandro-sopelana-b756aa290"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>Disponible para trabajar</Badge>
+        </a>
+      </h1>
+
+      <h2 class="text-2xl text-wrap">
+        <span class="text-red-200/90">
+          Estudiante de la Tecnicatura Universitaria en Programación - UTN.</span
+        ><span class="opacity-80">
+          Busco mi primer empleo como frontend</span
+        >.<span class="text-yellow-200/90"> Desarrollador Web</span>. De San
+        Ramón de la Nueva Orán - Salta, Argentina 🇦🇷.<br />
+        <span class="text-gray-400/90">
+          Apasionado por el desarrollo web, con ganas de aprender y crecer en el
+          ámbito profesional.</span
+        >
+      </h2>
+
+      <nav class="flex gap-x-3 mt-8">
+        <SocialPill
+          href="https:www.linkedin.com/in/sergio-alejandro-sopelana-b756aa290"
+        >
+          <LinkedInIcon class="size-6" />
+          LinkenIn
+        </SocialPill>
+        <SocialPill href="https://github.com/SASOPELANA">
+          <GitHubIcon class="size-6" />
+
+          GitHub
+        </SocialPill>
+        <SocialPill href="https://github.com/SASOPELANA">
+          <GmailIcon class="size-6" />
+
+          sopekof@gmail.com
+        </SocialPill>
+      </nav>
+    </section>
+  </main>
+</Layout>
