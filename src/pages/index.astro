@@ -9,6 +9,8 @@ import ImagenSope from "../../public/imagen/sergio.jpeg";
 import Experience from "../components/Experience.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import Briefcase from "../components/icons/Briefcase.astro";
+import CodeIcon from "../components/icons/Code.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout
@@ -16,7 +18,7 @@ import Briefcase from "../components/icons/Briefcase.astro";
   description="Contrata a SergioDev para crear tus aplicaciones web y contenido. Estudiante de la Tecnicatura Universitaria en Programación - UTN"
 >
   <main class="px-4">
-    <SectionContainer class="py-43 pb-24">
+    <SectionContainer class="py-43 pb-32">
       <div class="flex md:justify-start justify-center items-center">
         <img
           class="rounded-full size-12 mb-4"
@@ -72,11 +74,21 @@ import Briefcase from "../components/icons/Briefcase.astro";
 
     <SectionContainer id="experiencia">
       <section>
-        <h2 class="text-2xl font-semibold mb-4 flex gap-3 items-center">
+        <h2 class="text-3xl font-semibold mb-4 flex gap-3 items-center">
           <Briefcase class="size-7" />
-          Proyectos y experiencia en desarrollo web
+          Experiencia en desarrollo web. Freelance.
         </h2>
         <Experience />
+      </section>
+    </SectionContainer>
+
+    <SectionContainer id="experiencia">
+      <section>
+        <h2 class="text-3xl font-semibold mb-4 flex gap-3 items-center">
+          <CodeIcon class="size-7" />
+          Proyectos
+        </h2>
+        <Projects />
       </section>
     </SectionContainer>
   </main>
