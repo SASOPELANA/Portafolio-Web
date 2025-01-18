@@ -9,5 +9,5 @@ import vercel from "@astrojs/vercel";
 export default defineConfig({
   integrations: [tailwind()],
   adapter: vercel(),
-  site: "http:www.linkedin.com/in/sergio-alejandro-sopelana-b756aa290", // Cambia esto por tu dominio
+
 });
