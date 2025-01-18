@@ -1,0 +1,36 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+  {
+    title: "Portafolio de Sergio - Desarrolador y Programador Web",
+    date: "Enero 2025",
+    description:
+      "Portafolio Web desarrolado con tecnologias Astro.js y Tailwind CSS. Desarrollador Frontend y subido al hosting de gratuito de Vercel",
+    link: "#",
+  },
+  {
+    title: "Proyecto Carrito de Compras - Talento Tech",
+    date: "Diciembre 2024",
+    description:
+      "El proyecto final del curso de desarrollo Front End brindado por Talento Tech busca aplicar los conocimientos adquiridos a lo largo del curso mediante la creación de una página web funcional y atractiva. Utilizando tecnologías como HTML, CSS, JavaScript y Bootstrap CSS, se crea una interfaz moderna y responsive que permite a los usuarios interactuar de manera efectiva con la plataforma.",
+    link: "https://proyecto-final-talento-tech-rose.vercel.app/",
+  },
+  {
+    title: "Pagina ventas, marketing y SEO - Componentes de PC",
+    date: "Septiembre 2024",
+    description:
+      "La página está diseñada con un enfoque moderno, centrado en ofrecer una experiencia de usuario atractiva y fácil de navegar para los entusiastas del gaming. Utiliza HTML para estructurar el contenido, CSS para el diseño visual, Bootstrap para garantizar la responsividad y JavaScript para agregar interactividad y dinamismo..",
+    link: "https://proyecto1-css-talento-tech.vercel.app/",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
