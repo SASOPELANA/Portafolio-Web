@@ -15,14 +15,18 @@ import Briefcase from "../components/icons/Briefcase.astro";
   title="Portafolio de Sergio - Desarrolador y Programador Web"
   description="Contrata a SergioDev para crear tus aplicaciones web y contenido. Estudiante de la Tecnicatura Universitaria en Programación - UTN"
 >
-  <main>
-    <SectionContainer class="py-43 pb-30">
-      <img
-        class="rounded-full size-12 mb-4"
-        src={ImagenSope.src}
-        alt="sergio photo"
-      />
-      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
+  <main class="px-4">
+    <SectionContainer class="py-43 pb-24">
+      <div class="flex md:justify-start justify-center items-center">
+        <img
+          class="rounded-full size-12 mb-4"
+          src={ImagenSope.src}
+          alt="sergio photo"
+        />
+      </div>
+      <h1
+        class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+      >
         Hola, soy Sergio <a
           href="https:www.linkedin.com/in/sergio-alejandro-sopelana-b756aa290"
           target="_blank"
@@ -33,7 +37,7 @@ import Briefcase from "../components/icons/Briefcase.astro";
         </a>
       </h1>
 
-      <h2 class="text-2xl text-wrap">
+      <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
         <span class="text-red-200/90">
           Estudiante de la Tecnicatura Universitaria en Programación - UTN.</span
         ><span class="opacity-80">
@@ -46,20 +50,20 @@ import Briefcase from "../components/icons/Briefcase.astro";
         >
       </h2>
 
-      <nav class="flex gap-x-3 mt-8">
+      <nav class="flex gap-4 mt-8 flex-wrap">
         <SocialPill
           href="https:www.linkedin.com/in/sergio-alejandro-sopelana-b756aa290"
         >
-          <LinkedInIcon class="size-6" />
+          <LinkedInIcon class="size-4 md:size-6" />
           LinkenIn
         </SocialPill>
         <SocialPill href="https://github.com/SASOPELANA">
-          <GitHubIcon class="size-6" />
+          <GitHubIcon class="size-4 md:size-6" />
 
           GitHub
         </SocialPill>
         <SocialPill href="mailto:sopekof@gmail.com">
-          <GmailIcon class="size-6" />
+          <GmailIcon class="size-4 md:size-6" />
 
           sopekof@gmail.com
         </SocialPill>
