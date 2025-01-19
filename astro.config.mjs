@@ -8,7 +8,5 @@ import vercel from "@astrojs/vercel";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind()],
-  // site: "https:portafolio.dev",
-  output: "server",
-  adapter: vercel(),
+  site: "https:portafolio.dev",
 });
