@@ -1,27 +1,41 @@
 ---
 const PROJECTS = [
   {
-    title: "Portafolio Web",
-    description: "Desarrollador Web Frontend",
-    link: "#",
-    github: "https://github.com/SASOPELANA",
-    image: "https://placehold.co/300x300",
-    tags: ["HTML", "CSS", "JavaScript", "Astro", "TailwindCSS"],
+    title: "Carrito de Compras / Shopping Cart",
+    description:
+      "El proyecto final del curso de desarrollo Front End brindado por Talento Tech busca aplicar los conocimientos adquiridos a lo largo del curso mediante la creación de una página web funcional y atractiva. Utilizando tecnologías como HTML, CSS, JavaScript y Bootstrap CSS, se crea una interfaz moderna y responsive que permite a los usuarios interactuar de manera efectiva con la plataforma.",
+    link: "https://proyecto-final-talento-tech-rose.vercel.app/",
+    github: "https://github.com/SASOPELANA/ProyectoFinal-TalentoTech",
+    image: "../../public/imagen/carrito.webp",
+    tags: ["HTML", "CSS", "JavaScript", "Boostrap"],
+  },
+  {
+    title: " GamerTech Store: Tienda Virtual de PC Gamers ",
+    description:
+      "Este proyecto consiste en el desarrollo de una tienda virtual de PC Gamers utilizando HTML, CSS, JavaScript y Bootstrap. El objetivo principal es ofrecer una experiencia de usuario intuitiva y atractiva para explorar, personalizar y adquirir equipos de alto rendimiento diseñados para videojuegos.",
+    link: "https://proyecto2-css-talento-tech.vercel.app/",
+    github: "https://github.com/SASOPELANA/Proyecto2-CSS-TalentoTech",
+    image: "../../public/imagen/proyecto-css.webp",
+    tags: ["HTML", "CSS", "JavaScript", "Boostrap"],
   },
 ];
 ---
 
 {
   PROJECTS.map(({ title, description, tags, image }) => (
-    <article>
-      <h3>{title}</h3>
-      <p>{description}</p>
+    <article class="mb-8">
+      <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
+      <p class="text-lg mb-4 text-pretty">{description}</p>
       <ul>
         {tags.map((tag) => (
           <li>{tag}</li>
         ))}
       </ul>
-      <img src={image} alt={`Captura de pantalla del proyecto. ${title}`} />
+      <img
+        class="rounded shadow-2xl shadow-white/10 "
+        src={image}
+        alt={`Captura de pantalla del proyecto. ${title}`}
+      />
     </article>
   ))
 }
