@@ -1,4 +1,7 @@
 ---
+import ImagenCss from "../../public/imagen/proyecto-css.webp";
+import ImagenCarrito from "../../public/imagen/carrito.webp";
+
 const PROJECTS = [
   {
     title: "Carrito de Compras / Shopping Cart",
@@ -6,7 +9,7 @@ const PROJECTS = [
       "El proyecto final del curso de desarrollo Front End brindado por Talento Tech busca aplicar los conocimientos adquiridos a lo largo del curso mediante la creación de una página web funcional y atractiva. Utilizando tecnologías como HTML, CSS, JavaScript y Bootstrap CSS, se crea una interfaz moderna y responsive que permite a los usuarios interactuar de manera efectiva con la plataforma.",
     link: "https://proyecto-final-talento-tech-rose.vercel.app/",
     github: "https://github.com/SASOPELANA/ProyectoFinal-TalentoTech",
-    image: "/public/imagen/carrito.webp",
+    image: ImagenCarrito,
     tags: ["HTML", "CSS", "JavaScript", "Boostrap"],
   },
   {
@@ -15,7 +18,7 @@ const PROJECTS = [
       "Este proyecto consiste en el desarrollo de una tienda virtual de PC Gamers utilizando HTML, CSS, JavaScript y Bootstrap. El objetivo principal es ofrecer una experiencia de usuario intuitiva y atractiva para explorar, personalizar y adquirir equipos de alto rendimiento diseñados para videojuegos.",
     link: "https://proyecto2-css-talento-tech.vercel.app/",
     github: "https://github.com/SASOPELANA/Proyecto2-CSS-TalentoTech",
-    image: "/public/imagen/proyecto-css.webp",
+    image: ImagenCss,
     tags: ["HTML", "CSS", "JavaScript", "Boostrap"],
   },
 ];
@@ -33,7 +36,7 @@ const PROJECTS = [
       </ul>
       <img
         class="rounded shadow-2xl shadow-white/10 "
-        src={image}
+        src={image.src}
         alt={`Captura de pantalla del proyecto. ${title}`}
       />
     </article>
