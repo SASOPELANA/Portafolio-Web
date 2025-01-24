@@ -1,0 +1,73 @@
+<form
+  class="max-w-md mx-auto mt-8 p-6 bg-gray-300/85 rounded-lg shadow-md dark:bg-white/10"
+  action="https://formsubmit.co/sopekof@gmail.com"
+  method="POST"
+>
+  <h2 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
+    Contacto
+  </h2>
+
+  <div class="mb-4">
+    <label
+      for="name"
+      class="block mb-2 text-sm font-bold text-gray-900 dark:text-white"
+      >Nombre y Apellido</label
+    >
+    <input
+      type="text"
+      id="name"
+      name="name"
+      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:borde
+r-gray-600 dark:placeholder-gray-400 dark:text-white"
+      placeholder="Nombre y Apellido"
+      required
+    />
+  </div>
+
+  <div class="mb-4">
+    <label
+      for="email"
+      class="block mb-2 text-sm font-bold text-gray-900 dark:text-white"
+      >Correo Electronico</label
+    >
+    <input
+      type="email"
+      id="email"
+      name="email"
+      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:borde
+r-gray-600 dark:placeholder-gray-400 dark:text-white"
+      placeholder="nombre@company.com"
+      required
+    />
+  </div>
+
+  <div class="mb-4">
+    <label
+      for="message"
+      class="block mb-2 text-sm font-bold text-gray-900 dark:text-white"
+      >Tu Mensaje</label
+    >
+    <textarea
+      id="message"
+      name="message"
+      rows="4"
+      class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-g
+ray-600 dark:placeholder-gray-400 dark:text-white"
+      placeholder="Ingrese su mensaje..."></textarea>
+  </div>
+
+  <button
+    type="submit"
+    class="w-full text-black bg-white/90 hover:bg-yellow-500/50 focus:ring-4 focus:ring-blue-300 font-bold rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hove
+r:bg-blue-700 dark:focus:ring-blue-800"
+    >Enviar</button
+  >
+
+  <input type="hidden" name="_next" id="redirect-input" value="" />
+  <input type="hidden" name="_captcha" value="false" />
+</form>
+
+<script>
+  const redirectUrl = document.referrer || window.location.href;
+  document.getElementById("redirect-input")?.setAttribute("value", redirectUrl);
+</script>
