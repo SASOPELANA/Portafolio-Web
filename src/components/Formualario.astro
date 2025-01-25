@@ -1,5 +1,5 @@
 <form
-  class="max-w-md mx-auto mt-8 p-6 bg-gray-300/85 rounded-lg shadow-md dark:bg-white/10"
+  class="max-w-md mx-auto mt-8 p-6 bg-gray-300/85 rounded-b-lg shadow-md dark:bg-white/10"
   action="https://formsubmit.co/sopekof@gmail.com"
   method="POST"
 >
@@ -17,8 +17,9 @@
       type="text"
       id="name"
       name="name"
-      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:borde
-r-gray-600 dark:placeholder-gray-400 dark:text-white"
+      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg
+      focus:outline-none focus:ring-2 focus:ring-black focus:border-black block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600
+      dark:placeholder-gray-400 dark:text-white"
       placeholder="Nombre y Apellido"
       required
     />
@@ -34,11 +35,15 @@ r-gray-600 dark:placeholder-gray-400 dark:text-white"
       type="email"
       id="email"
       name="email"
-      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:borde
-r-gray-600 dark:placeholder-gray-400 dark:text-white"
+      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg
+      focus:outline-none focus:ring-2 focus:ring-black focus:border-black block invalid:focus:ring-red-500
+      w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white peer"
       placeholder="nombre@company.com"
       required
     />
+    <p class="text-red-500 hidden peer-invalid:block">
+      Ingrese un correo electrónico válido.
+    </p>
   </div>
 
   <div class="mb-4">
@@ -51,8 +56,10 @@ r-gray-600 dark:placeholder-gray-400 dark:text-white"
       id="message"
       name="message"
       rows="4"
-      class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-g
-ray-600 dark:placeholder-gray-400 dark:text-white"
+      class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300
+      focus:outline-none focus:ring-2
+      focus:ring-black focus:border-black dark:bg-gray-700
+      dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
       placeholder="Ingrese su mensaje..."></textarea>
   </div>
 
