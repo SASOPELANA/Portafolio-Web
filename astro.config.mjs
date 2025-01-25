@@ -9,4 +9,5 @@ import vercel from "@astrojs/vercel";
 export default defineConfig({
   integrations: [tailwind()],
   site: "https://portafolio.dev",
+  adapter: vercel(),
 });
