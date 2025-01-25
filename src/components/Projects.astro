@@ -3,6 +3,9 @@ import HtmlIcon from "./icons/Html.astro";
 import CssIcon from "./icons/Css.astro";
 import JsIcon from "./icons/Js.astro";
 import BoostrapIcon from "./icons/BoostrapIcon.astro";
+import GitHub from "./icons/GitHub.astro";
+import LinkButton from "./LinkButton.astro";
+import Link from "./icons/Link.astro";
 
 const TAGS = {
   HTML: {
@@ -44,8 +47,9 @@ const PROJECTS = [
     title: " GamerTech Store: Tienda Virtual de PC Gamers ",
     description:
       "Este proyecto consiste en el desarrollo de una tienda virtual de PC Gamers utilizando HTML, CSS, JavaScript y Bootstrap. El objetivo principal es ofrecer una experiencia de usuario intuitiva y atractiva para explorar, personalizar y adquirir equipos de alto rendimiento diseñados para videojuegos.",
-    link: "https://proyecto2-css-talento-tech.vercel.app/",
-    github: "https://github.com/SASOPELANA/Proyecto2-CSS-TalentoTech",
+    link: "https://proyecto1-css-talento-tech.vercel.app/",
+    github:
+      "https://github.com/SASOPELANA/Proyecto1-CSS-TalentoTech?tab=readme-ov-file",
     image: ImagenCss,
     tags: [TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.Boostrap],
   },
@@ -53,7 +57,7 @@ const PROJECTS = [
 ---
 
 {
-  PROJECTS.map(({ title, description, tags, image }) => (
+  PROJECTS.map(({ title, description, tags, image, link, github }) => (
     <article class="mb-8">
       <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
       <p class="text-lg mb-4 text-pretty text-white/80">{description}</p>
@@ -70,10 +74,25 @@ const PROJECTS = [
         ))}
       </ul>
       <img
-        class="rounded shadow-2xl shadow-white/10 "
+        class="rounded shadow-2xl shadow-white/10 md:hover:translate-x-2 md:hover:duration-700 "
         src={image.src}
         alt={`Captura de pantalla del proyecto. ${title}`}
       />
+
+      <footer class="flex items-end justify-start mt-4 gap-x-4 mb-10">
+        {github && (
+          <LinkButton href={github}>
+            <GitHub class="size-6" />
+            Code
+          </LinkButton>
+        )}
+        {link && (
+          <LinkButton href={link}>
+            <Link class="size-6" />
+            Preview
+          </LinkButton>
+        )}
+      </footer>
     </article>
   ))
 }
