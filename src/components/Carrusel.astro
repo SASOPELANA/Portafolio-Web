@@ -1,0 +1,119 @@
+---
+// Importamos imagenes de skills
+import Skill1 from "../assets/skill/astro1.png";
+import Skill2 from "../assets/skill/bootstrap2.png";
+import Skill3 from "../assets/skill/HTML6.png";
+import Skill4 from "../assets/skill/tailwindcss4.png";
+import Skill5 from "../assets/skill/node5.png";
+import Skill6 from "../assets/skill/css3.png";
+import Skill7 from "../assets/skill/github7.png";
+import Skill8 from "../assets/skill/js6.png";
+import Skill9 from "../assets/skill/vue9.png";
+---
+
+<div class="slider">
+  <div class="slide-track">
+    <div class="slide">
+      <img src={Skill1.src} alt="" />
+    </div>
+    <div class="slide">
+      <img src={Skill2.src} alt="" />
+    </div>
+    <div class="slide">
+      <img src={Skill3.src} alt="" />
+    </div>
+    <div class="slide">
+      <img src={Skill4.src} alt="" />
+    </div>
+    <div class="slide">
+      <img src={Skill5.src} alt="" />
+    </div>
+    <div class="slide">
+      <img src={Skill6.src} alt="" />
+    </div>
+    <div class="slide">
+      <img src={Skill7.src} alt="" />
+    </div>
+    <div class="slide">
+      <img src={Skill8.src} alt="" />
+    </div>
+    <div class="slide">
+      <img src={Skill9.src} alt="" />
+    </div>
+
+    <!-- Duplicate slides for infinite effect -->
+    <div class="slide">
+      <img src={Skill1.src} alt="" />
+    </div>
+    <div class="slide">
+      <img src={Skill2.src} alt="" />
+    </div>
+    <div class="slide">
+      <img src={Skill3.src} alt="" />
+    </div>
+    <div class="slide">
+      <img src={Skill4.src} alt="" />
+    </div>
+    <div class="slide">
+      <img src={Skill5.src} alt="" />
+    </div>
+    <div class="slide">
+      <img src={Skill6.src} alt="" />
+    </div>
+    <div class="slide">
+      <img src={Skill7.src} alt="" />
+    </div>
+    <div class="slide">
+      <img src={Skill8.src} alt="" />
+    </div>
+    <div class="slide">
+      <img src={Skill9.src} alt="" />
+    </div>
+  </div>
+</div>
+
+<style>
+  .slider {
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .slider .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 14);
+    margin: 20px;
+  }
+
+  .slider .slide {
+    width: 200px;
+  }
+
+  .slider .slide img {
+    display: flex;
+    height: 80%;
+    width: 80%;
+  }
+
+  @keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-200px * 8));
+      transform: translateX(calc(-200px * 8));
+    }
+  }
+
+  @media (max-width: 767px) {
+    .slider {
+      width: auto;
+      height: auto;
+      margin: auto;
+      padding: 5px;
+    }
+  }
+</style>
