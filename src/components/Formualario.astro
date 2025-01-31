@@ -70,11 +70,10 @@ r:bg-blue-700 dark:focus:ring-blue-800"
     >Enviar</button
   >
 
-  <input type="hidden" name="_next" id="redirect-input" value="" />
+  <input
+    type="hidden"
+    name="_next"
+    value="https://portafolio-web-tl1w.vercel.app/"
+  />
   <input type="hidden" name="_captcha" value="false" />
 </form>
-
-<script>
-  const redirectUrl = document.referrer || window.location.href;
-  document.getElementById("redirect-input")?.setAttribute("value", redirectUrl);
-</script>
