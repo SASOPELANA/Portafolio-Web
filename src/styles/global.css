@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Onest;
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../assets/fonts/Onest/Onest-VariableFont_wght.ttf") format("woff2");
+}
+
+@theme {
+  --font-Onest: Onest;
+}
