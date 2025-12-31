@@ -1,83 +1,60 @@
 ---
-// Importamos imagenes de skills
-import Skill1 from "../assets/skill/astro1.png";
-import Skill2 from "../assets/skill/bootstrap2.png";
-import Skill3 from "../assets/skill/HTML6.png";
-import Skill4 from "../assets/skill/tailwindcss4.png";
-import Skill5 from "../assets/skill/node5.png";
-import Skill6 from "../assets/skill/css3.png";
-import Skill7 from "../assets/skill/github7.png";
-import Skill8 from "../assets/skill/js6.png";
-import Skill9 from "../assets/skill/vue9.png";
-import Skill10 from "../assets/skill/ts10.png";
+// Importamos las svg icons
+import Skill1 from "../assets/skill/astroIcon.astro";
+import Skill2 from "../assets/skill/bootstrapIcons.astro";
+import Skill3 from "../assets/skill/htmlIcon.astro";
+import Skill4 from "../assets/skill/tailwindIcon.astro";
+import Skill5 from "../assets/skill/nodeIcon.astro";
+import Skill6 from "../assets/skill/cssIcon.astro";
+import Skill7 from "../assets/skill/githubIcon.astro";
+import Skill8 from "../assets/skill/jsIcon.astro";
+import Skill9 from "../assets/skill/reactIcon.astro";
+import Skill10 from "../assets/skill/tsIcon.astro";
+import Skill11 from "../assets/skill/sqliteIcon.astro";
+import Skill12 from "../assets/skill/posgreIcon.astro";
+import Skill13 from "../assets/skill/mysqlIcon.astro";
+import Skill14 from "../assets/skill/mariadbIcon.astro";
+import Skill15 from "../assets/skill/mongoIcon.astro";
+import Skill16 from "../assets/skill/firebaseIcon.astro";
+
+const skillSlider = [
+  Skill1,
+  Skill2,
+  Skill3,
+  Skill4,
+  Skill5,
+  Skill6,
+  Skill7,
+  Skill8,
+  Skill9,
+  Skill10,
+  Skill11,
+  Skill12,
+  Skill13,
+  Skill14,
+  Skill15,
+  Skill16,
+];
 ---
 
 <div class="slider">
-  <div class="slide-track">
-    <div class="slide">
-      <img src={Skill1.src} alt="" />
-    </div>
-    <div class="slide">
-      <img src={Skill2.src} alt="" />
-    </div>
-    <div class="slide">
-      <img src={Skill3.src} alt="" />
-    </div>
-    <div class="slide">
-      <img src={Skill4.src} alt="" />
-    </div>
-    <div class="slide">
-      <img src={Skill5.src} alt="" />
-    </div>
-    <div class="slide">
-      <img src={Skill6.src} alt="" />
-    </div>
-    <div class="slide">
-      <img src={Skill7.src} alt="" />
-    </div>
-    <div class="slide">
-      <img src={Skill8.src} alt="" />
-    </div>
-    <div class="slide">
-      <img src={Skill9.src} alt="" />
-    </div>
-
-    <div class="slide">
-      <img src={Skill10.src} alt="" />
-    </div>
+  <div class="slide-track gap-6">
+    {
+      skillSlider.map((Skill) => (
+        <div class="slide">
+          <Skill class="skill-icon" />
+        </div>
+      ))
+    }
 
     <!-- Duplicate slides for infinite effect -->
-    <div class="slide">
-      <img src={Skill1.src} alt="" />
-    </div>
-    <div class="slide">
-      <img src={Skill2.src} alt="" />
-    </div>
-    <div class="slide">
-      <img src={Skill3.src} alt="" />
-    </div>
-    <div class="slide">
-      <img src={Skill4.src} alt="" />
-    </div>
-    <div class="slide">
-      <img src={Skill5.src} alt="" />
-    </div>
-    <div class="slide">
-      <img src={Skill6.src} alt="" />
-    </div>
-    <div class="slide">
-      <img src={Skill7.src} alt="" />
-    </div>
-    <div class="slide">
-      <img src={Skill8.src} alt="" />
-    </div>
-    <div class="slide">
-      <img src={Skill9.src} alt="" />
-    </div>
-
-    <div class="slide">
-      <img src={Skill10.src} alt="" />
-    </div>
+    {
+      skillSlider.map((Skill) => (
+        <div class="slide">
+          <Skill class="skill-icon" />
+        </div>
+      ))
+    }
   </div>
 </div>
 

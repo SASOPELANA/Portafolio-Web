@@ -48,86 +48,91 @@ import SkillIcon from "../components/icons/SkillIcon.astro";
 
       <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
         <span class="text-red-200/90">
-          Estudiante de la Tecnicatura Universitaria en Programación - UTN.</span
-        ><span class="opacity-80 text-white/80">
-          Busco mi primer empleo como Frontend</span
-        > -<span class="text-yellow-200/90"> Desarrollador Web</span><span
-          class="text-white/80"
-          >. De San Ramón de la Nueva Orán - Salta, Argentina</span
-        > 🇦🇷.<br />
-        <span class="text-gray-400/90">
-          Apasionado por el desarrollo web, con ganas de aprender y crecer en el
-          ámbito profesional.</span
-        >
+          Estudiante de la Tecnicatura Universitaria en Informática - UNNE.
+        </span>
+        <span class="opacity-80 text-white/80">
+          Busco mi primer empleo como
+        </span>
+        - <span class="text-yellow-200/90"> Desarrollador FullStack </span>
+        <span class="text-white/80">
+          con enfoque en <strong
+            >JavaScript y TypeScript, con experiencia en React y Node.js,
+            utilizando bases de datos sql y no sql</strong
+          >. De San Ramón de la Nueva Orán - Salta, Argentina 🇦🇷.<br />
+          <span class="text-gray-400/90">
+            Apasionado por el desarrollo web, con ganas de aprender y crecer en
+            el ámbito profesional.
+          </span>
+        </span>
+
+        <nav class="flex gap-4 mt-8 flex-wrap mb-16">
+          <SocialPill
+            href="https://www.linkedin.com/in/sergio-alejandro-sopelana-b756aa290"
+          >
+            <LinkedInIcon class="size-4 md:size-6" />
+            LinkenIn
+          </SocialPill>
+          <SocialPill href="https://github.com/SASOPELANA">
+            <GitHubIcon class="size-4 md:size-6" />
+
+            GitHub
+          </SocialPill>
+          <SocialPill href="mailto:sopekof@gmail.com">
+            <GmailIcon class="size-4 md:size-6" />
+
+            sopekof@gmail.com
+          </SocialPill>
+        </nav>
       </h2>
 
-      <nav class="flex gap-4 mt-8 flex-wrap">
-        <SocialPill
-          href="https://www.linkedin.com/in/sergio-alejandro-sopelana-b756aa290"
-        >
-          <LinkedInIcon class="size-4 md:size-6" />
-          LinkenIn
-        </SocialPill>
-        <SocialPill href="https://github.com/SASOPELANA">
-          <GitHubIcon class="size-4 md:size-6" />
+      <SectionContainer id="experiencia">
+        <section>
+          <h2
+            class="text-3xl font-semibold mb-6 flex gap-3 items-center text-white"
+          >
+            <Briefcase class="size-7" />
+            Experiencia en desarrollo web. Freelance.
+          </h2>
+          <Experience />
+        </section>
+      </SectionContainer>
 
-          GitHub
-        </SocialPill>
-        <SocialPill href="mailto:sopekof@gmail.com">
-          <GmailIcon class="size-4 md:size-6" />
+      <SectionContainer id="proyectos">
+        <section>
+          <h2
+            class="text-3xl font-semibold mb-6 flex gap-3 items-center text-white"
+          >
+            <CodeIcon class="size-7" />
+            Proyectos
+          </h2>
+          <Projects />
+        </section>
+      </SectionContainer>
 
-          sopekof@gmail.com
-        </SocialPill>
-      </nav>
-    </SectionContainer>
+      <SectionContainer id="sobre-mi">
+        <TitleSection>
+          <ProfileCheck class="size-8 text-white" />
+          <span class="text-white">Sobre Mi</span>
+        </TitleSection>
+        <AboutMe />
+      </SectionContainer>
 
-    <SectionContainer id="experiencia">
-      <section>
-        <h2
-          class="text-3xl font-semibold mb-6 flex gap-3 items-center text-white"
-        >
-          <Briefcase class="size-7" />
-          Experiencia en desarrollo web. Freelance.
-        </h2>
-        <Experience />
-      </section>
-    </SectionContainer>
+      <SectionContainer id="skills">
+        <TitleSection>
+          <SkillIcon class="size-8 text-white" />
+          <span class="text-white">Skills - Tecnologías</span>
+        </TitleSection>
 
-    <SectionContainer id="proyectos">
-      <section>
-        <h2
-          class="text-3xl font-semibold mb-6 flex gap-3 items-center text-white"
-        >
-          <CodeIcon class="size-7" />
-          Proyectos
-        </h2>
-        <Projects />
-      </section>
-    </SectionContainer>
+        <Carrusel />
+      </SectionContainer>
 
-    <SectionContainer id="sobre-mi">
-      <TitleSection>
-        <ProfileCheck class="size-8 text-white" />
-        <span class="text-white">Sobre Mi</span>
-      </TitleSection>
-      <AboutMe />
-    </SectionContainer>
-
-    <SectionContainer id="skills">
-      <TitleSection>
-        <SkillIcon class="size-8 text-white" />
-        <span class="text-white">Skills - Tecnologías</span>
-      </TitleSection>
-
-      <Carrusel />
-    </SectionContainer>
-
-    <SectionContainer id="contactos">
-      <TitleSection>
-        <Formulario class="size-8 text-white" />
-        <span class="text-white">Contacto</span>
-      </TitleSection>
-      <Form1 />
+      <SectionContainer id="contactos">
+        <TitleSection>
+          <Formulario class="size-8 text-white" />
+          <span class="text-white">Contacto</span>
+        </TitleSection>
+        <Form1 />
+      </SectionContainer>
     </SectionContainer>
   </main>
 </Layout>

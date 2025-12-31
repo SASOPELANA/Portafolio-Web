@@ -1,136 +1,50 @@
 ---
-import HtmlIcon from "./icons/Html.astro";
-import CssIcon from "./icons/Css.astro";
-import JsIcon from "./icons/Js.astro";
-import BoostrapIcon from "./icons/BoostrapIcon.astro";
 import GitHub from "./icons/GitHub.astro";
 import LinkButton from "./LinkButton.astro";
 import Link from "./icons/Link.astro";
-import AstroIcon from "./icons/AstroIcon.astro";
-import TailwindIcon from "./icons/Tailwind.astro";
-import TsIcon from "./icons/Ts.astro";
-
-const TAGS = {
-  HTML: {
-    name: "HTML",
-    class: "bg-[#E34F26] text-white font-bold",
-    icon: HtmlIcon,
-  },
-  CSS: {
-    name: "CSS",
-    class: "bg-[#fff] text-[#663399] font-bold",
-    icon: CssIcon,
-  },
-  JS: {
-    name: "JavaScript",
-    class: "bg-[#F7DF1E] text-black font-bold",
-    icon: JsIcon,
-  },
-  Boostrap: {
-    name: "Bootstrap",
-    class: "bg-[#7952b3] text-white font-bold",
-    icon: BoostrapIcon,
-  },
-  TAILWIND: {
-    name: "Tailwind",
-    class: "bg-[#003159] text-white font-bold",
-    icon: TailwindIcon,
-  },
-  ASTRO: {
-    name: "Astro",
-    class: "bg-[#fff] text-black font-bold",
-    icon: AstroIcon,
-  },
-  TS: {
-    name: "TypeScript",
-    class: "bg-[#3178C6] text-white font-bold",
-    icon: TsIcon,
-  },
-};
-
-import ImagenCss from "../../public/imagen/proyecto-css.webp";
-import ImagenCarrito from "../../public/imagen/carrito.webp";
-import ImagenBooks from "../../public/imagen/books.webp";
-import ImagenLanding from "../../public/imagen/landing-motos.webp";
-
-const PROJECTS = [
-  {
-    title: "Landing Page Motos",
-    description:
-      "El proyecto Clon-Tesla-Landing, es un ejemplo de una página de aterrizaje de Tesla, específicamente una versión para motos. Este proyecto está desarrollado utilizando HTML, CSS, JavaScript, Astro y Tailwind. La mayor parte del código está escrito en Astro, con pequeños componentes en JavaScript y estilos en CSS. Este proyecto es ideal para aprender sobre la integración de estas tecnologías en una aplicación web.",
-    link: "https://clon-landing-motos.vercel.app/",
-    github: "https://github.com/SASOPELANA/Clon-Tesla-Landing",
-    image: ImagenLanding,
-    tags: [TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.TAILWIND, TAGS.ASTRO, TAGS.TS],
-  },
-  {
-    title: "Libros Recomendados",
-    description:
-      "Este proyecto, Libros Recomendados, utiliza tecnologías como HTML, JavaScript, CSS, Tailwind y Astro. Está diseñado para recomendar libros y presenta una imagen destacada de libros en su página principal. Cuenta con una estructura de carpetas organizada para gestionar el contenido y los estilos de manera eficiente. El proyecto emplea Astro para optimizar la generación de páginas estáticas y dinámicas.",
-    link: "https://books-recomendados.vercel.app/",
-    github: "https://github.com/SASOPELANA/Curso-Astro5-midu",
-    image: ImagenBooks,
-    tags: [TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.TAILWIND, TAGS.ASTRO, TAGS.TS],
-  },
-  {
-    title: "Carrito de Compras / Shopping Cart",
-    description:
-      "El proyecto final del curso de desarrollo Front End brindado por Talento Tech busca aplicar los conocimientos adquiridos a lo largo del curso mediante la creación de una página web funcional y atractiva. Utilizando tecnologías como HTML, CSS, JavaScript y Bootstrap CSS, se crea una interfaz moderna y responsive que permite a los usuarios interactuar de manera efectiva con la plataforma.",
-    link: "https://proyecto-final-talento-tech-rose.vercel.app/",
-    github: "https://github.com/SASOPELANA/ProyectoFinal-TalentoTech",
-    image: ImagenCarrito,
-    tags: [TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.Boostrap],
-  },
-  {
-    title: " GamerTech Store: Tienda Virtual de PC Gamers ",
-    description:
-      "Este proyecto consiste en el desarrollo de una tienda virtual de PC Gamers utilizando HTML, CSS, JavaScript y Bootstrap. El objetivo principal es ofrecer una experiencia de usuario intuitiva y atractiva para explorar, personalizar y adquirir equipos de alto rendimiento diseñados para videojuegos.",
-    link: "https://proyecto1-css-talento-tech.vercel.app/",
-    github:
-      "https://github.com/SASOPELANA/Proyecto1-CSS-TalentoTech?tab=readme-ov-file",
-    image: ImagenCss,
-    tags: [TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.Boostrap],
-  },
-];
+import { PROJECTS } from "../data/projects.data";
+import type { Project } from "../types/projects.types";
 ---
 
 {
-  PROJECTS.map(({ title, description, tags, image, link, github }) => (
-    <article class="mb-8">
-      <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
-      <p class="text-lg mb-4 text-pretty text-white/80">{description}</p>
-      <ul class="flex flex-wrap gap-x-2 flex-row max-sm:grid max-sm:grid-cols-3 max-sm:gap-y-2">
-        {tags.map((tag) => (
-          <li>
-            <span
-              class={`flex gap-2 rounded-full text-xs ${tag.class} py-1 px-2 mb-2`}
-            >
-              <tag.icon class="size-4" />
-              {tag.name}
-            </span>
-          </li>
-        ))}
-      </ul>
-      <img
-        class="rounded shadow-2xl shadow-white/10 md:hover:translate-x-2 md:hover:duration-700 "
-        src={image.src}
-        alt={`Captura de pantalla del proyecto. ${title}`}
-      />
+  PROJECTS.map(
+    ({ title, description, tags, image, link, github }): Project => (
+      <article class="mb-8">
+        <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
+        <p class="text-lg mb-4 text-pretty text-white/80">{description}</p>
+        <ul class="flex flex-wrap gap-x-2 flex-row max-sm:grid max-sm:grid-cols-3 max-sm:gap-y-2">
+          {tags.map((tag) => (
+            <li>
+              <span
+                class={`flex gap-2 rounded-full text-xs ${tag.class} py-1 px-2 mb-2`}
+              >
+                <tag.icon class="size-4" />
+                {tag.name}
+              </span>
+            </li>
+          ))}
+        </ul>
+        <img
+          class="rounded shadow-2xl shadow-white/10 md:hover:translate-x-2 md:hover:duration-700 "
+          src={image.src}
+          alt={`Captura de pantalla del proyecto. ${title}`}
+        />
 
-      <footer class="flex items-end justify-start mt-4 gap-x-4 mb-10">
-        {github && (
-          <LinkButton href={github}>
-            <GitHub class="size-6" />
-            Code
-          </LinkButton>
-        )}
-        {link && (
-          <LinkButton href={link}>
-            <Link class="size-6" />
-            Preview
-          </LinkButton>
-        )}
-      </footer>
-    </article>
-  ))
+        <footer class="flex items-end justify-start mt-4 gap-x-4 mb-10">
+          {github && (
+            <LinkButton href={github}>
+              <GitHub class="size-6" />
+              Code
+            </LinkButton>
+          )}
+          {link && (
+            <LinkButton href={link}>
+              <Link class="size-6" />
+              Preview
+            </LinkButton>
+          )}
+        </footer>
+      </article>
+    ),
+  )
 }
