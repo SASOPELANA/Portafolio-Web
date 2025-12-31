@@ -8,6 +8,7 @@ import LinkButton from "./LinkButton.astro";
 import Link from "./icons/Link.astro";
 import AstroIcon from "./icons/AstroIcon.astro";
 import TailwindIcon from "./icons/Tailwind.astro";
+import TsIcon from "./icons/Ts.astro";
 
 const TAGS = {
   HTML: {
@@ -40,6 +41,11 @@ const TAGS = {
     class: "bg-[#fff] text-black font-bold",
     icon: AstroIcon,
   },
+  TS: {
+    name: "TypeScript",
+    class: "bg-[#3178C6] text-white font-bold",
+    icon: TsIcon,
+  },
 };
 
 import ImagenCss from "../../public/imagen/proyecto-css.webp";
@@ -55,7 +61,7 @@ const PROJECTS = [
     link: "https://clon-landing-motos.vercel.app/",
     github: "https://github.com/SASOPELANA/Clon-Tesla-Landing",
     image: ImagenLanding,
-    tags: [TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.TAILWIND, TAGS.ASTRO],
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.TAILWIND, TAGS.ASTRO, TAGS.TS],
   },
   {
     title: "Libros Recomendados",
@@ -64,7 +70,7 @@ const PROJECTS = [
     link: "https://books-recomendados.vercel.app/",
     github: "https://github.com/SASOPELANA/Curso-Astro5-midu",
     image: ImagenBooks,
-    tags: [TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.TAILWIND, TAGS.ASTRO],
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.TAILWIND, TAGS.ASTRO, TAGS.TS],
   },
   {
     title: "Carrito de Compras / Shopping Cart",
@@ -97,7 +103,7 @@ const PROJECTS = [
         {tags.map((tag) => (
           <li>
             <span
-              class={`flex gap-2 rounded-full text-xs ${tag.class} py-1 px-2`}
+              class={`flex gap-2 rounded-full text-xs ${tag.class} py-1 px-2 mb-2`}
             >
               <tag.icon class="size-4" />
               {tag.name}
