@@ -6,13 +6,18 @@ import AstroIcon from "../components/icons/AstroIcon.astro";
 import TailwindIcon from "../components/icons/Tailwind.astro";
 import TsIcon from "../components/icons/Ts.astro";
 import MarkdownIcon from "../components/icons/Markdown.astro";
+import NodeIcon from "../components/icons/Node.astro";
+import ReactIcon from "../components/icons/React.astro";
+import FirebaseIcon from "../components/icons/Firebase.astro";
+import JwtIcon from "../components/icons/JwtIcon.astro";
+import ExpressIcon from "../components/icons/ExpressIcon.astro";
 
 import type { Project } from "../types/projects.types";
 
 const TAGS = {
   HTML: {
     name: "HTML",
-    class: "bg-[#E34F26] text-white font-bold",
+    class: "bg-[#fff] text-black font-bold",
     icon: HtmlIcon,
   },
   CSS: {
@@ -22,12 +27,12 @@ const TAGS = {
   },
   JS: {
     name: "JavaScript",
-    class: "bg-[#F7DF1E] text-black font-bold",
+    class: "bg-[#e5f6d9] text-black font-bold",
     icon: JsIcon,
   },
   BOOTSTRAP: {
     name: "Bootstrap",
-    class: "bg-[#7952b3] text-white font-bold",
+    class: "bg-[#ffffff] text-[#7E13F8] font-bold",
     icon: BoostrapIcon,
   },
   TAILWIND: {
@@ -42,13 +47,39 @@ const TAGS = {
   },
   TS: {
     name: "TypeScript",
-    class: "bg-[#3178C6] text-white font-bold",
+    class: "bg-[#fff] text-[#3178C6] font-bold",
     icon: TsIcon,
   },
   MARKDOWN: {
     name: "Markdown",
     class: "bg-[#fff] text-black font-bold",
     icon: MarkdownIcon,
+  },
+  NODE: {
+    name: "Node.js",
+    class: "bg-[#000000] text-[#90C53F] font-bold",
+    icon: NodeIcon,
+  },
+  REACT: {
+    name: "React",
+    class: "bg-[#ffffff] text-black font-bold",
+    icon: ReactIcon,
+  },
+  FIREBASE: {
+    name: "Firebase",
+    class: "bg-[#FFF] text-black font-bold",
+    icon: FirebaseIcon,
+  },
+  JWT: {
+    name: "JWT",
+    class: "bg-[#000] text-white font-bold",
+    icon: JwtIcon,
+  },
+
+  EXPRESS: {
+    name: "Express.js",
+    class: "bg-[#fff] text-[#000] font-bold",
+    icon: ExpressIcon,
   },
 };
 
@@ -57,8 +88,45 @@ import ImagenCarrito from "../../public/imagen/carrito.webp";
 import ImagenBooks from "../../public/imagen/books.webp";
 import ImagenLanding from "../../public/imagen/landing-motos.webp";
 import ImageEventoGamer from "../../public/imagen/imagen-evento-gamer.webp";
+import ImageReact from "../../public/imagen/react-node.webp";
+import ImageNoticias from "../../public/imagen/pagina-noticia-moderna.webp";
 
 export const PROJECTS: Project[] = [
+  {
+    title: "Pagina de Noticias Moderna",
+    description:
+      "Proyecto de página de noticias moderna desarrollado con Astro y TailwindCSS, diseñado para ofrecer una experiencia rápida y responsiva. Integra soporte para MDX, procesamiento de imágenes con Sharp, y está preparado con TypeScript para un desarrollo escalable y seguro. Incluye configuraciones de desarrollo, construcción y previsualización listas para usar, además de herramientas de formato como Prettier y plugins específicos de Astro para mantener el código limpio y consistente.",
+    link: "https://pagina-noticias-moderna-astro.vercel.app/",
+    github: "https://github.com/SASOPELANA/pagina-noticias-moderna-astro",
+    image: ImageNoticias,
+    tags: [
+      TAGS.ASTRO,
+      TAGS.TS,
+      TAGS.TAILWIND,
+      TAGS.CSS,
+      TAGS.MARKDOWN,
+      TAGS.HTML,
+    ],
+  },
+  {
+    title: "Carrito de Compras, aplicación Full Stack",
+    description:
+      "Tienda online completa, desarrollada como proyecto final del curso de React en Talento Tech. La aplicación incluye autenticación de usuarios, carrito de compras, búsqueda de productos y consumo de una API REST propia, implementada con Node.js y Firebase para la gestión completa del catálogo.",
+    link: "https://proyecto-final-react-tienda.vercel.app/",
+    github: "https://github.com/SASOPELANA/proyecto-final-react-tienda",
+    image: ImageReact,
+    tags: [
+      TAGS.REACT,
+      TAGS.TAILWIND,
+      TAGS.JS,
+      TAGS.NODE,
+      TAGS.EXPRESS,
+      TAGS.TS,
+      TAGS.FIREBASE,
+      TAGS.JWT,
+    ],
+  },
+
   {
     title: "Proyecto Evento Gamer",
     description:

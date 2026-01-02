@@ -9,7 +9,7 @@ export const EXPERIENCE: Experience[] = [
     link: "https://github.com/SASOPELANA/proyecto-final-react-tienda",
   },
   {
-    title: "Curo de Node.js y Express.js con Firebase como base de datos",
+    title: "Curso de Node.js y Express.js con Firebase como base de datos",
     date: "Marzo 2025",
     description:
       "Proyecto final de NodeJS del curso Talento Tech: una API REST para la gestión de productos que combina Firebase como base de datos principal y un archivo JSON local para búsquedas y actualizaciones específicas. Implementa autenticación segura con JWT y está organizada con rutas, controladores, middlewares y servicios, reflejando buenas prácticas de backend y desarrollo escalable.",
@@ -26,7 +26,7 @@ export const EXPERIENCE: Experience[] = [
     title: "Estudiante de la Tecnicatura Universitaria en Programación - UTN",
     date: "Febrero 2024",
     description:
-      "En Programación 1 y 2 de la UTN, aprendí los fundamentos de C++, desde variables, condicionales y ciclos, hasta memoria dinámica, punteros, estructuras de datos y programación orientada a objetos (POO). Durantes los cuatrimestres, incluyó ejercicios prácticos, trabajos en equipo y trabajos integradores finales, donde aplicamos los conocimientos para resolver problemas complejos y desarrollar aplicaciones completas. Utilicé bibliotecas estándar, manejo de archivos y técnicas de depuración, reforzando habilidades técnicas y de colaboración. Como resultado, adquirí una base sólida para diseñar soluciones robustas y trabajar eficientemente en equipo.",
+      "En Programación 1 y 2 de la UTN, aprendí los fundamentos de C++, desde variables, condicionales y ciclos, hasta memoria dinámica, punteros, estructuras de datos y programación orientada a objetos (POO). Durante los cuatrimestres, incluyó ejercicios prácticos, trabajos en equipo y trabajos integradores finales, donde aplicamos los conocimientos para resolver problemas complejos y desarrollar aplicaciones completas. Utilicé bibliotecas estándar, manejo de archivos y técnicas de depuración, reforzando habilidades técnicas y de colaboración. Como resultado, adquirí una base sólida para diseñar soluciones robustas y trabajar eficientemente en equipo.",
     link: "https://github.com/SASOPELANA/Programacion2/tree/main",
   },
   {
