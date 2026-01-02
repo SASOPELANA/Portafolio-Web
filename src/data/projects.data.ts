@@ -7,6 +7,8 @@ import TailwindIcon from "../components/icons/Tailwind.astro";
 import TsIcon from "../components/icons/Ts.astro";
 import MarkdownIcon from "../components/icons/Markdown.astro";
 
+import type { Project } from "../types/projects.types";
+
 const TAGS = {
   HTML: {
     name: "HTML",
@@ -54,8 +56,18 @@ import ImagenCss from "../../public/imagen/proyecto-css.webp";
 import ImagenCarrito from "../../public/imagen/carrito.webp";
 import ImagenBooks from "../../public/imagen/books.webp";
 import ImagenLanding from "../../public/imagen/landing-motos.webp";
+import ImageEventoGamer from "../../public/imagen/imagen-evento-gamer.webp";
 
-export const PROJECTS = [
+export const PROJECTS: Project[] = [
+  {
+    title: "Proyecto Evento Gamer",
+    description:
+      "Proyecto web de evento para gamers desarrollado con Astro, TypeScript y Tailwind CSS. Incluye navegación rápida y moderna, soporte multilenguaje (inglés y español) con i18n, secciones de arena, categorías y contacto. Totalmente responsiva y adaptable a dispositivos móviles, laptops y escritorios, ofreciendo una experiencia fluida y atractiva para los usuarios.",
+    link: "https://remake-inca-cup-2026.vercel.app/",
+    github: "https://github.com/SASOPELANA/Remake-Evento-Gamers",
+    image: ImageEventoGamer,
+    tags: [TAGS.ASTRO, TAGS.TS, TAGS.TAILWIND, TAGS.MARKDOWN],
+  },
   {
     title: "Landing Page Motos",
     description:
