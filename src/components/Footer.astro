@@ -1,3 +1,7 @@
+---
+const year = new Date().getFullYear();
+---
+
 <footer
   class="rounded-lg shadow m-4 bg-white/10 backdrop-blur-lg w-full xl:w-[1120px] mx-auto mb-10"
 >
@@ -6,7 +10,8 @@
   >
     <span
       class="text-sm sm:text-center text-yellow-200/90 text-center block w-full md:w-auto md:text-left"
-      >© 2025 <span class="hover:text-white hover:font-bold">
+      >© {year}
+      <span class="hover:text-white hover:font-bold">
         <a
           href="https://github.com/SASOPELANA"
           target="_blank"

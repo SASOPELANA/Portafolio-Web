@@ -13,4 +13,11 @@ export default defineConfig({
   vite: {
     plugins: [tailwind()],
   },
+  i18n: {
+    defaultLocale: "es",
+    locales: ["es", "en", "pt-br"],
+    routing: {
+      prefixDefaultLocale: false,
+    },
+  },
 });
