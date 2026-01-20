@@ -57,7 +57,7 @@ const TAGS = {
   },
   NODE: {
     name: "Node.js",
-    class: "bg-[#000000] text-[#90C53F] font-bold",
+    class: "bg-[#fff] text-[#90C53F] font-bold",
     icon: NodeIcon,
   },
   REACT: {
@@ -72,7 +72,7 @@ const TAGS = {
   },
   JWT: {
     name: "JWT",
-    class: "bg-[#000] text-white font-bold",
+    class: "bg-[#e5f6d9] text-black font-bold",
     icon: JwtIcon,
   },
 
