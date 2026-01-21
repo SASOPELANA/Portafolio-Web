@@ -55,5 +55,37 @@
       "DESCRIPTION": "Curso introductorio de C# enfocado en los fundamentos de la programación, desde conceptos básicos como variables y condicionales hasta temas avanzados como funciones, vectores y matrices. Através de este curso me inicie en la Programación, adquiriendo las bases solidas y necesarias para desarrollar aplicaciones simples de consolas. Impartido por MaxiPrograma, profesor de la UTN."
     },
     "BUTTON": "Saber mas..."
+  },
+
+  "PROJECTS": {
+    "TITLE": " Proyectos",
+    "ITEMS_7": {
+      "TITLE": "Pagina de Noticias Moderna",
+      "DESCRIPTION": "Proyecto de página de noticias moderna desarrollado con Astro y TailwindCSS, diseñado para ofrecer una experiencia rápida y responsiva. Integra soporte para MDX, procesamiento de imágenes con Sharp, y está preparado con TypeScript para un desarrollo escalable y seguro. Incluye configuraciones de desarrollo, construcción y previsualización listas para usar, además de herramientas de formato como Prettier y plugins específicos de Astro para mantener el código limpio y consistente."
+    },
+    "ITEMS_6": {
+      "TITLE": "Carrito de Compras, aplicación Full Stack",
+      "DESCRIPTION": "Tienda online completa, desarrollada como proyecto final del curso de React en Talento Tech. La aplicación incluye autenticación de usuarios, carrito de compras, búsqueda de productos y consumo de una API REST propia, implementada con Node.js y Firebase para la gestión completa del catálogo."
+    },
+    "ITEMS_5": {
+      "TITLE": "Proyecto Evento Gamer",
+      "DESCRIPTION": "Proyecto web de evento para gamers desarrollado con Astro, TypeScript y Tailwind CSS. Incluye navegación rápida y moderna, soporte multilenguaje (inglés y español) con i18n, secciones de arena, categorías y contacto. Totalmente responsiva y adaptable a dispositivos móviles, laptops y escritorios, ofreciendo una experiencia fluida y atractiva para los usuarios."
+    },
+    "ITEMS_4": {
+      "TITLE": "Landing Page Motos",
+      "DESCRIPTION": "El proyecto Clon-Tesla-Landing, es un ejemplo de una página de aterrizaje de Tesla, específicamente una versión para motos. Este proyecto está desarrollado utilizando HTML, CSS, JavaScript, Astro y Tailwind. La mayor parte del código está escrito en Astro, con pequeños componentes en JavaScript y estilos en CSS. Este proyecto es ideal para aprender sobre la integración de estas tecnologías en una aplicación web."
+    },
+    "ITEMS_3": {
+      "TITLE": "Libros Recomendados",
+      "DESCRIPTION": "Este proyecto, Libros Recomendados, utiliza tecnologías como HTML, JavaScript, CSS, Tailwind y Astro. Está diseñado para recomendar libros y presenta una imagen destacada de libros en su página principal. Cuenta con una estructura de carpetas organizada para gestionar el contenido y los estilos de manera eficiente. El proyecto emplea Astro para optimizar la generación de páginas estáticas y dinámicas."
+    },
+    "ITEMS_2": {
+      "TITLE": "Carrito de Compras",
+      "DESCRIPTION": "El proyecto final del curso de desarrollo Front End brindado por Talento Tech busca aplicar los conocimientos adquiridos a lo largo del curso mediante la creación de una página web funcional y atractiva. Utilizando tecnologías como HTML, CSS, JavaScript y Bootstrap CSS, se crea una interfaz moderna y responsive que permite a los usuarios interactuar de manera efectiva con la plataforma."
+    },
+    "ITEMS_1": {
+      "TITLE": "Tienda Virtual de PC Gamers Y componentes",
+      "DESCRIPTION": "Este proyecto consiste en el desarrollo de una tienda virtual de PC Gamers utilizando HTML, CSS, JavaScript y Bootstrap. El objetivo principal es ofrecer una experiencia de usuario intuitiva y atractiva para explorar, personalizar y adquirir equipos de alto rendimiento diseñados para videojuegos."
+    }
   }
 }

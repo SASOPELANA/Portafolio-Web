@@ -4,10 +4,17 @@ import LinkButton from "./LinkButton.astro";
 import Link from "./icons/Link.astro";
 import { PROJECTS } from "../data/projects.data";
 import type { Project } from "../types/projects.types";
+
+import { getI18n } from "@/i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18n({ currentLocale });
+
+const projects = PROJECTS(i18n);
 ---
 
 {
-  PROJECTS.map(
+  projects.map(
     ({ title, description, tags, image, link, github }): Project => (
       <article class="mb-8">
         <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
