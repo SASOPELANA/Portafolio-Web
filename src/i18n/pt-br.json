@@ -1,0 +1,59 @@
+{
+  "SEO": {
+    "TITLE": "Portfólio de Sergio - Desenvolvedor FullStack - JavaScript - TypeScript",
+    "DESCRIPTION": "Contrate o SergioDev para criar suas aplicações web e conteúdo. Estudante da Tecnicatura Universitária em Informática - UNNE"
+  },
+  "HEADER": {
+    "TOP": "Início",
+    "EXPERIENCE": "Experiência",
+    "PROJECTS": "Projetos",
+    "ABOUT": "Sobre mim",
+    "CONTACT": "Contato"
+  },
+  "TOP": {
+    "H1": {
+      "P1": "Olá, eu sou o Sergio",
+      "P2": "Disponível para trabalhar"
+    },
+    "H2": {
+      "SPAN_1": "Estudante da Tecnicatura Universitária em Informática - UNNE.",
+      "SPAN_2": "Busco meu primeiro emprego como",
+      "SPAN_3": "Desenvolvedor FullStack",
+      "SPAN_4": {
+        "P1": "com foco em",
+        "P2": "JavaScript e TypeScript, com experiência em React e Node.js, utilizando bancos de dados SQL e NoSQL",
+        "P3": ". De San Ramón de la Nueva Orán - Salta, Argentina 🇦🇷.",
+        "P4": "Atualmente focado no desenvolvimento Backend, com vontade de aprender e crescer profissionalmente."
+      }
+    }
+  },
+  "EXPERIENCE": {
+    "TITLE": "Experiência no desenvolvimento de aplicações escaláveis. Freelancer.",
+    "ITEMS_5": {
+      "TITLE": "Curso de Desenvolvimento Web com React.js",
+      "DATE": "Agosto de 2025",
+      "DESCRIPTION": "Projeto final do curso de React da Talento Tech: loja online completa com autenticação de usuários, carrinho de compras persistente, busca e filtragem de produtos, consumo de API REST própria e rotas protegidas. Desenvolvida com React, Vite e Tailwind CSS, a aplicação é totalmente responsiva, otimizada para Vercel e reflete boas práticas de frontend moderno, gerenciamento de estado global e experiência do usuário."
+    },
+    "ITEMS_4": {
+      "TITLE": "Curso de Node.js e Express.js com Firebase como banco de dados",
+      "DATE": "Março de 2025",
+      "DESCRIPTION": "Projeto final do curso de Node.js da Talento Tech: uma API REST para gerenciamento de produtos que combina o Firebase como banco de dados principal com um arquivo JSON local para buscas e atualizações específicas. Implementa autenticação segura com JWT e é organizada com rotas, controladores, middlewares e serviços, refletindo boas práticas de backend e desenvolvimento escalável."
+    },
+    "ITEMS_3": {
+      "TITLE": "Curso de Desenvolvimento Web com HTML, CSS e JavaScript. Astro e Tailwind CSS",
+      "DATE": "Agosto de 2024",
+      "DESCRIPTION": "O Curso de Frontend da Talento Tech é um programa completo que cobre os fundamentos e técnicas avançadas de desenvolvimento web, com foco em HTML, CSS e JavaScript. Por meio de aulas teóricas, exemplos práticos e exercícios, os estudantes aprendem a criar interfaces web modernas, responsivas e interativas. O curso inclui recursos como ferramentas CSS, configurações de Node.js e projetos integradores para aplicar os conhecimentos adquiridos. Com uma abordagem prática, os participantes desenvolvem habilidades para projetar e programar sites eficientes e atrativos. Ao final, estarão preparados para enfrentar desafios reais do desenvolvimento frontend."
+    },
+    "ITEMS_2": {
+      "TITLE": "Estudante da Graduação Tecnológica em Programação - UTN",
+      "DATE": "Fevereiro de 2024",
+      "DESCRIPTION": "Em Programação 1 e 2 na UTN, aprendi os fundamentos de C++, desde variáveis, condicionais e laços até memória dinâmica, ponteiros, estruturas de dados e programação orientada a objetos (POO). Durante os semestres, foram realizados exercícios práticos, trabalhos em equipe e projetos integradores finais, nos quais aplicamos os conhecimentos para resolver problemas complexos e desenvolver aplicações completas. Utilizei bibliotecas padrão, manipulação de arquivos e técnicas de depuração, fortalecendo habilidades técnicas e de colaboração. Como resultado, adquiri uma base sólida para projetar soluções robustas e trabalhar de forma eficiente em equipe."
+    },
+    "ITEMS_1": {
+      "TITLE": "Estudante Autodidata",
+      "DATE": "Maio de 2023",
+      "DESCRIPTION": "Curso introdutório de C# focado nos fundamentos da programação, desde conceitos básicos como variáveis e condicionais até temas avançados como funções, vetores e matrizes. Por meio desse curso, iniciei minha trajetória na programação, adquirindo as bases sólidas e necessárias para desenvolver aplicações simples de console. Ministrado por MaxiPrograma, professor da UTN."
+    },
+    "BUTTON": "Saber mais..."
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "SEO": {
+    "TITLE": "Sergio's Portfolio - FullStack Developer - JavaScript - TypeScript",
+    "DESCRIPTION": "Hire SergioDev to build your web applications and content. Student of the University Technical Degree in Computer Science - UNNE"
+  },
+  "HEADER": {
+    "TOP": "Home",
+    "EXPERIENCE": "Experience",
+    "PROJECTS": "Projects",
+    "ABOUT": "About me",
+    "CONTACT": "Contact"
+  },
+  "TOP": {
+    "H1": {
+      "P1": "Hi, I'm Sergio",
+      "P2": "Available for work"
+    },
+    "H2": {
+      "SPAN_1": "Student of the University Technical Degree in Computer Science - UNNE.",
+      "SPAN_2": "I am looking for my first job as a",
+      "SPAN_3": "FullStack Developer",
+      "SPAN_4": {
+        "P1": "with a focus on",
+        "P2": "JavaScript and TypeScript, with experience in React and Node.js, using SQL and NoSQL databases",
+        "P3": ". From San Ramón de la Nueva Orán - Salta, Argentina 🇦🇷.",
+        "P4": "Currently focused on Backend development, eager to learn and grow professionally."
+      }
+    }
+  },
+  "EXPERIENCE": {
+    "TITLE": "Experience in scalable application development. Freelance.",
+    "ITEMS_5": {
+      "TITLE": "Web Development Course with React.js",
+      "DATE": "August 2025",
+      "DESCRIPTION": "Final project of the React course with Talento Tech: a complete online store with user authentication, persistent shopping cart, product search and filtering, consumption of a custom REST API, and protected routes. Built with React, Vite, and Tailwind CSS, the application is fully responsive, optimized for Vercel, and reflects best practices in modern frontend development, global state management, and user experience."
+    },
+    "ITEMS_4": {
+      "TITLE": "Node.js and Express.js Course with Firebase as Database",
+      "DATE": "March 2025",
+      "DESCRIPTION": "Final project of the Talento Tech Node.js course: a REST API for product management that combines Firebase as the main database with a local JSON file for specific searches and updates. It implements secure authentication with JWT and is organized using routes, controllers, middlewares, and services, reflecting best practices in backend and scalable development."
+    },
+    "ITEMS_3": {
+      "TITLE": "Web Development Course with HTML, CSS, and JavaScript. Astro and Tailwind CSS",
+      "DATE": "August 2024",
+      "DESCRIPTION": "The Talento Tech Frontend Course is a comprehensive program that covers the fundamentals and advanced techniques of web development, focusing on HTML, CSS, and JavaScript. Through theoretical classes, practical examples, and exercises, students learn to build modern, responsive, and interactive web interfaces. The course includes resources such as CSS tools, Node.js configurations, and integrative projects to apply acquired knowledge. With a hands-on approach, participants develop skills to design and program efficient and attractive websites. Upon completion, they are prepared to face real-world frontend development challenges."
+    },
+    "ITEMS_2": {
+      "TITLE": "Student of the University Technical Degree in Programming - UTN",
+      "DATE": "February 2024",
+      "DESCRIPTION": "In Programming 1 and 2 at UTN, I learned the fundamentals of C++, from variables, conditionals, and loops to dynamic memory, pointers, data structures, and object-oriented programming (OOP). Throughout the semesters, the program included practical exercises, teamwork, and final integrative projects, where we applied our knowledge to solve complex problems and develop complete applications. I used standard libraries, file handling, and debugging techniques, strengthening both technical and collaboration skills. As a result, I acquired a solid foundation to design robust solutions and work efficiently in a team."
+    },
+    "ITEMS_1": {
+      "TITLE": "Self-Taught Student",
+      "DATE": "May 2023",
+      "DESCRIPTION": "Introductory C# course focused on programming fundamentals, from basic concepts such as variables and conditionals to advanced topics like functions, vectors, and matrices. Through this course, I began my journey into programming, acquiring the solid and necessary foundations to develop simple console applications. Taught by MaxiPrograma, a UTN professor."
+    },
+    "BUTTON": "Learn more..."
+  }
+}
