@@ -53,30 +53,42 @@
 
 ## 🚀 Instalación Local
 
-```bash
-git clone https://github.com/SASOPELANA/Portafolio-Web.git
-cd Portafolio-Web
-bun install
-bun run dev
-```
+1. **Clona el repositorio:**
 
-El proyecto estará disponible en `http://localhost:4321`
+   ```bash
+   git clone https://github.com/SASOPELANA/Portafolio-Web.git
+   cd Portafolio-Web
+   ```
+
+2. **Instala las dependencias:**
+
+   ```bash
+   bun install
+   ```
+
+3. **Ejecuta el servidor de desarrollo:**
+
+   ```bash
+   bun run dev
+   ```
+
+4. **Abre tu navegador:**
+   - El proyecto estará disponible en `http://localhost:4321`
 
 ---
 
 ## 📁 Estructura del Proyecto
 
-```
-src/
-├── assets/          # Imágenes, fuentes e iconos
-├── components/      # Componentes reutilizables
-├── data/            # Datos de proyectos y experiencia
-├── i18n/            # Traducciones (ES, EN, PT-BR)
-├── layouts/         # Layouts principales
-├── pages/           # Páginas del sitio
-├── styles/          # Estilos globales
-└── types/           # Tipos TypeScript
-```
+| Carpeta       | Descripción                          |
+| ------------- | ------------------------------------ |
+| `assets/`     | Imágenes, fuentes e iconos           |
+| `components/` | Componentes reutilizables (+ icons/) |
+| `data/`       | Datos de proyectos y experiencia     |
+| `i18n/`       | Traducciones (ES, EN, PT-BR)         |
+| `layouts/`    | Layouts principales                  |
+| `pages/`      | Páginas del sitio (multi-idioma)     |
+| `styles/`     | Estilos globales                     |
+| `types/`      | Tipos TypeScript                     |
 
 ---
 
