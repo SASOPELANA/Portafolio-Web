@@ -1,5 +1,14 @@
 ---
+import CvIcons from "@/components/icons/CvIcon.astro";
+import WhatsappIcons from "@/components/icons/WhatsappIcon.astro";
+
 const year = new Date().getFullYear();
+
+// traslation imports
+import { getI18n } from "@/i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18n({ currentLocale });
 ---
 
 <footer
@@ -17,17 +26,31 @@ const year = new Date().getFullYear();
           target="_blank"
           rel="noopener noreferrer">SergioDevs</a
         ></span
-      >. Todos los derechos reservados.
+      >{i18n.FOOTER.SPAN}
     </span>
     <ul
       class="flex flex-wrap justify-center items-center mt-3 text-sm font-medium text-white/90 sm:mt-0"
     >
+      {/* TODO: poner el cv en la carpeta public */}
       <li>
-        <a href="#" class="hover:font-bold me-4 md:me-6">Sobre mi</a>
+        <a
+          href="/cv.pdf"
+          download="cv-sergio-alejandro-sopelana.pdf"
+          class="flex items-center gap-x-2 hover:font-bold me-4 md:me-6"
+        >
+          <CvIcons class="size-5" />{i18n.FOOTER.CV}</a
+        >
       </li>
 
       <li>
-        <a href="#" class="hover:font-bold">Contactos</a>
+        <a
+          href="https://wa.me/5493878375394"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center gap-x-2 hover:font-bold"
+        >
+          <WhatsappIcons class="size-5" />{i18n.FOOTER.WHATSAPP}</a
+        >
       </li>
     </ul>
   </div>

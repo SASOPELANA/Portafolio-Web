@@ -87,5 +87,54 @@
       "TITLE": "Tienda Virtual de PC Gamers Y componentes",
       "DESCRIPTION": "Este proyecto consiste en el desarrollo de una tienda virtual de PC Gamers utilizando HTML, CSS, JavaScript y Bootstrap. El objetivo principal es ofrecer una experiencia de usuario intuitiva y atractiva para explorar, personalizar y adquirir equipos de alto rendimiento diseñados para videojuegos."
     }
+  },
+  "ABOUT": {
+    "TITLE": "Sobre Mi",
+    "PARAGRAPH_1": {
+      "P_1": "Me llamo Sergio pero mis amigos me llaman sope. Empecé en la programación como autodidacta con cursos y vídeos de Youtube, tengo 37 años. Actualmente estoy ",
+      "P_2": "estudiando en la Universidad Nacional del Nordeste - facultad de Ingeniería"
+    },
+    "PARAGRAPH_2": {
+      "P_1": "Algunos de mis trabajos incluyen ",
+      "P_2": "desarrollo de aplicaciones web y trabajo grupales en la facultad",
+      "P_3": ". Ademas participo activamente en los ",
+      "P_4": "foros",
+      "P_5": " de la Universidad en donde comparto mi conocimiento y experiencias."
+    },
+    "PARAGRAPH_3": {
+      "P_1": "Como estudiante de la ",
+      "P_2": " Universidad Nacional del Nordeste,",
+      "P_3": " he combinado mi formación académica con mi experiencia práctica en el desarrollo de aplicaciones web y trabajos colaborativos en la ",
+      "P_4": "facultad. ",
+      "P_5": "Además, he tenido la oportunidad de compartir mis conocimientos y experiencias en los foros universitarios, ayudando a otros estudiantes a resolver dudas y fomentando el aprendizaje en equipo."
+    }
+  },
+  "SKILLS": {
+    "TITLE": "Habilidades técnicas"
+  },
+  "CONTACT": {
+    "TITLE": "Contacto",
+    "FORM": {
+      "TITLE": "Formulario de contacto",
+      "DIV_1": {
+        "LABEL_1": "Nombre y Apellido",
+        "INPUT_1": "Ingrese su nombre y apellido"
+      },
+      "DIV_2": {
+        "LABEL_2": "Correo Electrónico",
+        "INPUT_2": "nombre@ejemplo.com",
+        "P": "Ingrese un correo electrónico válido."
+      },
+      "DIV_3": {
+        "LABEL_3": "Tu Mensajes",
+        "TEXTAREA": "Ingrese su mensaje aqui..."
+      },
+      "BUTTON": "Enviar"
+    }
+  },
+  "FOOTER": {
+    "SPAN": ". Todos los derechos reservados.",
+    "WHATSAPP": "WhatsApp",
+    "CV": "Curriculum Vitae"
   }
 }

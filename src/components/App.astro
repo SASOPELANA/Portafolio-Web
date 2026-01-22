@@ -113,7 +113,7 @@ const i18n = getI18n({ currentLocale });
       <SectionContainer id="about">
         <TitleSection>
           <ProfileCheck class="size-8 text-white" />
-          <span class="text-white">Sobre Mi</span>
+          <span class="text-white">{i18n.ABOUT.TITLE}</span>
         </TitleSection>
         <AboutMe />
       </SectionContainer>
@@ -121,7 +121,7 @@ const i18n = getI18n({ currentLocale });
       <SectionContainer id="skills">
         <TitleSection>
           <SkillIcon class="size-8 text-white" />
-          <span class="text-white">Skills - Tecnologías</span>
+          <span class="text-white">{i18n.SKILLS.TITLE}</span>
         </TitleSection>
 
         <Carrusel />
@@ -130,7 +130,7 @@ const i18n = getI18n({ currentLocale });
       <SectionContainer id="contact">
         <TitleSection>
           <Formulario class="size-8 text-white" />
-          <span class="text-white">Contacto</span>
+          <span class="text-white">{i18n.CONTACT.TITLE}</span>
         </TitleSection>
         <Form1 />
       </SectionContainer>

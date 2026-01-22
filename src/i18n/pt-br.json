@@ -87,5 +87,58 @@
       "TITLE": "Loja Virtual de PCs Gamers e Componentes",
       "DESCRIPTION": "Este projeto consiste no desenvolvimento de uma loja virtual de PCs gamers utilizando HTML, CSS, JavaScript e Bootstrap. O objetivo principal é oferecer uma experiência de usuário intuitiva e atraente para explorar, personalizar e adquirir equipamentos de alto desempenho projetados para jogos."
     }
+  },
+
+  "ABOUT": {
+    "TITLE": "Sobre Mim",
+    "PARAGRAPH_1": {
+      "P_1": "Meu nome é Sergio, mas meus amigos me chamam de Sope. Comecei na programação como autodidata, por meio de cursos e vídeos no YouTube, e tenho 37 anos. Atualmente estou ",
+      "P_2": "estudando na Universidade Nacional do Nordeste – Faculdade de Engenharia"
+    },
+    "PARAGRAPH_2": {
+      "P_1": "Alguns dos meus trabalhos incluem ",
+      "P_2": "desenvolvimento de aplicações web e trabalhos em grupo na universidade",
+      "P_3": ". Além disso, participo ativamente dos ",
+      "P_4": "fóruns",
+      "P_5": " da universidade, onde compartilho meus conhecimentos e experiências."
+    },
+    "PARAGRAPH_3": {
+      "P_1": "Como estudante da ",
+      "P_2": " Universidade Nacional do Nordeste,",
+      "P_3": " combinei minha formação acadêmica com minha experiência prática no desenvolvimento de aplicações web e em trabalhos colaborativos na ",
+      "P_4": "faculdade. ",
+      "P_5": "Além disso, tive a oportunidade de compartilhar meus conhecimentos e experiências nos fóruns universitários, ajudando outros estudantes a resolver dúvidas e incentivando o aprendizado em equipe."
+    }
+  },
+
+  "SKILLS": {
+    "TITLE": "Habilidades Técnicas"
+  },
+
+  "CONTACT": {
+    "TITLE": "Contato",
+    "FORM": {
+      "TITLE": "Formulário de Contato",
+      "DIV_1": {
+        "LABEL_1": "Nome e Sobrenome",
+        "INPUT_1": "Digite seu nome e sobrenome"
+      },
+      "DIV_2": {
+        "LABEL_2": "E-mail",
+        "INPUT_2": "nome@exemplo.com",
+        "P": "Digite um endereço de e-mail válido."
+      },
+      "DIV_3": {
+        "LABEL_3": "Sua Mensagem",
+        "TEXTAREA": "Digite sua mensagem aqui..."
+      },
+      "BUTTON": "Enviar"
+    }
+  },
+
+  "FOOTER": {
+    "SPAN": ". Todos os direitos reservados.",
+    "WHATSAPP": "WhatsApp",
+    "CV": "Currículo"
   }
 }

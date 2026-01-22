@@ -87,5 +87,57 @@
       "TITLE": "Virtual Store for Gaming PCs and Components",
       "DESCRIPTION": "This project consists of developing a virtual store for gaming PCs using HTML, CSS, JavaScript, and Bootstrap. The main goal is to offer an intuitive and attractive user experience to explore, customize, and purchase high-performance systems designed for gaming."
     }
+  },
+
+  "ABOUT": {
+    "TITLE": "About Me",
+    "PARAGRAPH_1": {
+      "P_1": "My name is Sergio, but my friends call me Sope. I started programming as a self-taught developer through courses and YouTube videos, and I am 37 years old. I am currently ",
+      "P_2": "studying at the National University of the Northeast – Faculty of Engineering"
+    },
+    "PARAGRAPH_2": {
+      "P_1": "Some of my work includes ",
+      "P_2": "web application development and group projects at the university",
+      "P_3": ". I also actively participate in the ",
+      "P_4": "forums",
+      "P_5": " of the university, where I share my knowledge and experiences."
+    },
+    "PARAGRAPH_3": {
+      "P_1": "As a student at the ",
+      "P_2": " National University of the Northeast,",
+      "P_3": " I have combined my academic background with practical experience in web application development and collaborative projects at the ",
+      "P_4": "faculty. ",
+      "P_5": "Additionally, I have had the opportunity to share my knowledge and experiences in university forums, helping other students solve problems and encouraging teamwork and collaborative learning."
+    }
+  },
+  "SKILLS": {
+    "TITLE": "Technical Skills"
+  },
+
+  "CONTACT": {
+    "TITLE": "Contact",
+    "FORM": {
+      "TITLE": "Contact Form",
+      "DIV_1": {
+        "LABEL_1": "Full Name",
+        "INPUT_1": "Enter your full name"
+      },
+      "DIV_2": {
+        "LABEL_2": "Email Address",
+        "INPUT_2": "name@example.com",
+        "P": "Please enter a valid email address."
+      },
+      "DIV_3": {
+        "LABEL_3": "Your Message",
+        "TEXTAREA": "Enter your message here..."
+      },
+      "BUTTON": "Send"
+    }
+  },
+
+  "FOOTER": {
+    "SPAN": ". All rights reserved.",
+    "WHATSAPP": "WhatsApp",
+    "CV": "Resume"
   }
 }

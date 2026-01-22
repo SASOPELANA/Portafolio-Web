@@ -1,5 +1,11 @@
 ---
 import ImagenSergio from "../../public/imagen/sergio.jpeg";
+
+// traslation imports
+import { getI18n } from "@/i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18n({ currentLocale });
 ---
 
 <article
@@ -9,30 +15,25 @@ import ImagenSergio from "../../public/imagen/sergio.jpeg";
     class="[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1"
   >
     <p>
-      Me llamo Sergio pero mis amigos me llaman sope. Empecé en la programación
-      como autodidacta con cursos y vídeos de Youtube, tengo 36 años.
-      Actualmente estoy <strong
-        >estudiando en la Universidad Nacional del Nordeste - facultad de
-        Ingeniería</strong
-      >.
+      {i18n.ABOUT.PARAGRAPH_1.P_1}
+      <strong>{i18n.ABOUT.PARAGRAPH_1.P_2}.</strong>
     </p>
 
     <p>
-      Algunos de mis trabajos incluyen <strong
-        >desarrollo de aplicaciones web y trabajo grupales en la facultad</strong
-      >. Ademas participo activamente en los <strong>foros</strong> de la Universidad
-      en donde comparto mi conocimiento y experiencias.
+      {i18n.ABOUT.PARAGRAPH_2.P_1}
+      <strong>{i18n.ABOUT.PARAGRAPH_2.P_2}</strong>{
+        i18n.ABOUT.PARAGRAPH_2.P_3
+      }<strong>{i18n.ABOUT.PARAGRAPH_2.P_4}</strong>
+      {i18n.ABOUT.PARAGRAPH_2.P_5}
     </p>
 
     <p>
-      Como estudiante de la <strong> Universidad Nacional del Nordeste</strong>,
-      he combinado mi formación académica con mi experiencia práctica en el
-      desarrollo de aplicaciones web y trabajos colaborativos en la <strong
-        >facultad.</strong
-      >
-      Además, he tenido la oportunidad de compartir mis conocimientos y experiencias
-      en los foros universitarios, ayudando a otros estudiantes a resolver dudas y
-      fomentando el aprendizaje en equipo.
+      {i18n.ABOUT.PARAGRAPH_3.P_1}<strong>
+        {i18n.ABOUT.PARAGRAPH_3.P_2}
+      </strong>
+      {i18n.ABOUT.PARAGRAPH_3.P_3}
+      <strong>{i18n.ABOUT.PARAGRAPH_3.P_4}</strong>
+      {i18n.ABOUT.PARAGRAPH_3.P_5}
     </p>
   </div>
 
