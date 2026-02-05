@@ -1,0 +1,89 @@
+---
+// traslation imports
+import { getI18n } from "@/i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18n({ currentLocale });
+---
+
+<form
+  class="max-w-md mx-auto mt-8 p-6 bg-gray-300/85 rounded-lg shadow-md dark:bg-white/10"
+  action="https://formsubmit.co/sopekof@gmail.com"
+  method="POST"
+>
+  <h2 class="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
+    {i18n.CONTACT.FORM.TITLE}
+  </h2>
+
+  <div class="mb-4">
+    <label
+      for="name"
+      class="block mb-2 text-sm font-bold text-gray-900 dark:text-white"
+      >{i18n.CONTACT.FORM.DIV_1.LABEL_1}</label
+    >
+    <input
+      type="text"
+      id="name"
+      name="name"
+      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg
+      focus:outline-none focus:ring-2 focus:ring-black focus:border-black block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600
+      dark:placeholder-gray-400 dark:text-white"
+      placeholder={i18n.CONTACT.FORM.DIV_1.INPUT_1}
+      required
+    />
+  </div>
+
+  <div class="mb-4">
+    <label
+      for="email"
+      class="block mb-2 text-sm font-bold text-gray-900 dark:text-white"
+      >{i18n.CONTACT.FORM.DIV_2.LABEL_2}</label
+    >
+    <input
+      type="email"
+      id="email"
+      name="email"
+      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg
+      focus:outline-none focus:ring-2 focus:ring-black focus:border-black block invalid:focus:ring-red-500
+      w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white peer"
+      placeholder={i18n.CONTACT.FORM.DIV_2.INPUT_2}
+      required
+    />
+    <p
+      class="text-red-500 hidden peer-[&:not(:placeholder-shown):invalid]:block mt-1 text-sm"
+    >
+      {i18n.CONTACT.FORM.DIV_2.P}
+    </p>
+  </div>
+
+  <div class="mb-4">
+    <label
+      for="message"
+      class="block mb-2 text-sm font-bold text-gray-900 dark:text-white"
+      >{i18n.CONTACT.FORM.DIV_3.LABEL_3}</label
+    >
+    <textarea
+      id="message"
+      name="message"
+      rows="4"
+      class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300
+      focus:outline-none focus:ring-2
+      focus:ring-black focus:border-black dark:bg-gray-700
+      dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+      placeholder={i18n.CONTACT.FORM.DIV_3.TEXTAREA}></textarea>
+  </div>
+
+  <button
+    type="submit"
+    class="w-full text-black bg-white/90 hover:bg-yellow-500/80 hover:scale-105 cursor-pointer transition focus:ring-4 focus:ring-blue-300 font-bold rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hove
+r:bg-blue-700 dark:focus:ring-blue-800"
+    >{i18n.CONTACT.FORM.BUTTON}</button
+  >
+
+  <input
+    type="hidden"
+    name="_next"
+    value="https://portafolio-web-tl1w.vercel.app/"
+  />
+  <input type="hidden" name="_captcha" value="false" />
+</form>

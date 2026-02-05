@@ -1,0 +1,141 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Badge from "@/components/Badge.astro";
+import LinkedInIcon from "@/components/icons/Linkendin.astro";
+import SocialPill from "@/components/SocialPill.astro";
+import GitHubIcon from "@/components/icons/GitHub.astro";
+import GmailIcon from "@/components/icons/Mail.astro";
+import ImagenSope from "../../public/imagen/sergio.jpeg";
+import Experience from "@/components/Experience.astro";
+import SectionContainer from "@/components/SectionContainer.astro";
+import Briefcase from "@/components/icons/Briefcase.astro";
+import CodeIcon from "@/components/icons/Code.astro";
+import Projects from "@/components/Projects.astro";
+import TitleSection from "@/components/TitleSection.astro";
+import ProfileCheck from "@/components/icons/ProfileCheck.astro";
+import AboutMe from "@/components/AboutMe.astro";
+import Formulario from "@/components/icons/Forms.astro";
+import Form1 from "@/components/Formualario.astro";
+import Carrusel from "@/components/Carrusel.astro";
+import SkillIcon from "@/components/icons/SkillIcon.astro";
+
+// traslation imports
+import { getI18n } from "@/i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18n({ currentLocale });
+---
+
+<Layout title={i18n.SEO.TITLE} description={i18n.SEO.DESCRIPTION}>
+  <main class="px-4">
+    <SectionContainer class="py-2 pb-32">
+      <div
+        class="flex md:justify-start justify-center items-center max-md:mt-8"
+      >
+        <img
+          class="rounded-full size-12 mb-4"
+          src={ImagenSope.src}
+          alt="sergio photo"
+        />
+      </div>
+      <h1
+        class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+      >
+        {i18n.TOP.H1.P1}
+        <a
+          href="https://www.linkedin.com/in/sergio-alejandro-sopelana-b756aa290"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex justify-center items-center"
+        >
+          <Badge>{i18n.TOP.H1.P2}</Badge>
+        </a>
+      </h1>
+
+      <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
+        <span class="text-red-200/90">
+          {i18n.TOP.H2.SPAN_1}
+        </span>
+        <span class="opacity-80 text-white/80">
+          {i18n.TOP.H2.SPAN_2}
+        </span>
+        <span class="text-yellow-200/90">{i18n.TOP.H2.SPAN_3}</span>
+        <span class="text-white/80">
+          {i18n.TOP.H2.SPAN_4.P1}
+          <strong>{i18n.TOP.H2.SPAN_4.P2}</strong>{i18n.TOP.H2.SPAN_4.P3}<br />
+          <span class="text-gray-400/90">
+            {i18n.TOP.H2.SPAN_4.P4}
+          </span>
+        </span>
+
+        <nav class="flex gap-4 mt-8 flex-wrap mb-16">
+          <SocialPill
+            href="https://www.linkedin.com/in/sergio-alejandro-sopelana-b756aa290"
+          >
+            <LinkedInIcon class="size-4 md:size-6" />
+            LinkenIn
+          </SocialPill>
+          <SocialPill href="https://github.com/SASOPELANA">
+            <GitHubIcon class="size-4 md:size-6" />
+
+            GitHub
+          </SocialPill>
+          <SocialPill href="mailto:sopekof@gmail.com">
+            <GmailIcon class="size-4 md:size-6" />
+
+            sopekof@gmail.com
+          </SocialPill>
+        </nav>
+      </h2>
+
+      <SectionContainer id="experience">
+        <section>
+          <h2
+            class="text-3xl font-semibold mb-6 flex gap-3 items-center text-white"
+          >
+            <Briefcase class="size-8" />
+            {i18n.EXPERIENCE.TITLE}
+          </h2>
+          <Experience />
+        </section>
+      </SectionContainer>
+
+      <SectionContainer id="projects">
+        <section>
+          <h2
+            class="text-3xl font-semibold mb-6 flex gap-3 items-center text-white"
+          >
+            <CodeIcon class="size-7" />
+            {i18n.PROJECTS.TITLE}
+          </h2>
+          <Projects />
+        </section>
+      </SectionContainer>
+
+      <SectionContainer id="about">
+        <TitleSection>
+          <ProfileCheck class="size-8 text-white" />
+          <span class="text-white">{i18n.ABOUT.TITLE}</span>
+        </TitleSection>
+        <AboutMe />
+      </SectionContainer>
+
+      <SectionContainer id="skills">
+        <TitleSection>
+          <SkillIcon class="size-8 text-white" />
+          <span class="text-white">{i18n.SKILLS.TITLE}</span>
+        </TitleSection>
+
+        <Carrusel />
+      </SectionContainer>
+
+      <SectionContainer id="contact">
+        <TitleSection>
+          <Formulario class="size-8 text-white" />
+          <span class="text-white">{i18n.CONTACT.TITLE}</span>
+        </TitleSection>
+        <Form1 />
+      </SectionContainer>
+    </SectionContainer>
+  </main>
+</Layout>

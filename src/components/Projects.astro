@@ -1,0 +1,60 @@
+---
+import GitHub from "./icons/GitHub.astro";
+import LinkButton from "./LinkButton.astro";
+import Link from "./icons/Link.astro";
+import { PROJECTS } from "../data/projects.data";
+import type { Project } from "../types/projects.types";
+
+import { getI18n } from "@/i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18n({ currentLocale });
+
+const projects = PROJECTS(i18n);
+---
+
+{
+  projects.map(
+    ({ title, description, tags, image, link, github }): Project => (
+      <article class="mb-8">
+        <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
+        <p class="text-lg mb-4 text-pretty text-white/80">{description}</p>
+        <ul class="flex flex-wrap gap-x-2 flex-row max-sm:grid max-sm:grid-cols-3 max-sm:gap-y-2">
+          {tags.map((tag) => {
+            const TagIcon = tag.icon;
+            return (
+              <li>
+                <span
+                  class={`flex gap-2 rounded-full text-xs ${tag.class} py-1 px-2 mb-2`}
+                >
+                  {TagIcon && <TagIcon class="size-4" />}
+                  {tag.name}
+                </span>
+              </li>
+            );
+          })}
+        </ul>
+        <img
+          class="rounded shadow-2xl shadow-white/10 md:hover:translate-x-2 md:hover:duration-700 "
+          src={image.src}
+          alt={`Captura de pantalla del proyecto. ${title}`}
+        />
+
+        <footer class="flex items-end justify-start mt-4 gap-x-4 mb-10">
+          {github && (
+            <LinkButton href={github}>
+              <GitHub class="size-6" />
+              Code
+            </LinkButton>
+          )}
+          {link && (
+            <LinkButton href={link}>
+              <Link class="size-6" />
+              Preview
+            </LinkButton>
+          )}
+        </footer>
+      </article>
+    ),
+  )
+}

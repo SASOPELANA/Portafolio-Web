@@ -1,0 +1,48 @@
+---
+import ImagenSergio from "../../public/imagen/sergio.jpeg";
+
+// traslation imports
+import { getI18n } from "@/i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18n({ currentLocale });
+---
+
+<article
+  class="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row"
+>
+  <div
+    class="[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1"
+  >
+    <p>
+      {i18n.ABOUT.PARAGRAPH_1.P_1}
+      <strong>{i18n.ABOUT.PARAGRAPH_1.P_2}.</strong>
+    </p>
+
+    <p>
+      {i18n.ABOUT.PARAGRAPH_2.P_1}
+      <strong>{i18n.ABOUT.PARAGRAPH_2.P_2}</strong>{
+        i18n.ABOUT.PARAGRAPH_2.P_3
+      }<strong>{i18n.ABOUT.PARAGRAPH_2.P_4}</strong>
+      {i18n.ABOUT.PARAGRAPH_2.P_5}
+    </p>
+
+    <p>
+      {i18n.ABOUT.PARAGRAPH_3.P_1}<strong>
+        {i18n.ABOUT.PARAGRAPH_3.P_2}
+      </strong>
+      {i18n.ABOUT.PARAGRAPH_3.P_3}
+      <strong>{i18n.ABOUT.PARAGRAPH_3.P_4}</strong>
+      {i18n.ABOUT.PARAGRAPH_3.P_5}
+    </p>
+  </div>
+
+  <img
+    width="200"
+    height="200"
+    src={ImagenSergio.src}
+    alt="Sergio"
+    class="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20"
+    style="object-position: 50% 50%"
+  />
+</article>

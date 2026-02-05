@@ -1,0 +1,22 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+import { EXPERIENCE } from "@/data/experiencie.data.ts";
+
+// traslation imports
+import { getI18n } from "@/i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18n({ currentLocale });
+
+const experiences = EXPERIENCE(i18n);
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    experiences.map((experience) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>

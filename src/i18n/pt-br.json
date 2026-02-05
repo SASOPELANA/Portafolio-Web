@@ -1,0 +1,144 @@
+{
+  "SEO": {
+    "TITLE": "Portfólio de Sergio - Desenvolvedor FullStack - JavaScript - TypeScript",
+    "DESCRIPTION": "Contrate o SergioDev para criar suas aplicações web e conteúdo. Estudante da Tecnicatura Universitária em Informática - UNNE"
+  },
+  "HEADER": {
+    "TOP": "Início",
+    "EXPERIENCE": "Experiência",
+    "PROJECTS": "Projetos",
+    "ABOUT": "Sobre mim",
+    "CONTACT": "Contato"
+  },
+  "TOP": {
+    "H1": {
+      "P1": "Olá, eu sou o Sergio",
+      "P2": "Disponível para trabalhar"
+    },
+    "H2": {
+      "SPAN_1": "Estudante da Tecnicatura Universitária em Informática - UNNE.",
+      "SPAN_2": "Busco meu primeiro emprego como",
+      "SPAN_3": "Desenvolvedor FullStack",
+      "SPAN_4": {
+        "P1": "com foco em",
+        "P2": "JavaScript e TypeScript, com experiência em React e Node.js, utilizando bancos de dados SQL e NoSQL",
+        "P3": ". De San Ramón de la Nueva Orán - Salta, Argentina 🇦🇷.",
+        "P4": "Atualmente focado no desenvolvimento Backend, com vontade de aprender e crescer profissionalmente."
+      }
+    }
+  },
+  "EXPERIENCE": {
+    "TITLE": "Experiência no desenvolvimento de aplicações escaláveis. Freelancer.",
+    "ITEMS_5": {
+      "TITLE": "Curso de Desenvolvimento Web com React.js",
+      "DATE": "Agosto de 2025",
+      "DESCRIPTION": "Projeto final do curso de React da Talento Tech: loja online completa com autenticação de usuários, carrinho de compras persistente, busca e filtragem de produtos, consumo de API REST própria e rotas protegidas. Desenvolvida com React, Vite e Tailwind CSS, a aplicação é totalmente responsiva, otimizada para Vercel e reflete boas práticas de frontend moderno, gerenciamento de estado global e experiência do usuário."
+    },
+    "ITEMS_4": {
+      "TITLE": "Curso de Node.js e Express.js com Firebase como banco de dados",
+      "DATE": "Março de 2025",
+      "DESCRIPTION": "Projeto final do curso de Node.js da Talento Tech: uma API REST para gerenciamento de produtos que combina o Firebase como banco de dados principal com um arquivo JSON local para buscas e atualizações específicas. Implementa autenticação segura com JWT e é organizada com rotas, controladores, middlewares e serviços, refletindo boas práticas de backend e desenvolvimento escalável."
+    },
+    "ITEMS_3": {
+      "TITLE": "Curso de Desenvolvimento Web com HTML, CSS e JavaScript. Astro e Tailwind CSS",
+      "DATE": "Agosto de 2024",
+      "DESCRIPTION": "O Curso de Frontend da Talento Tech é um programa completo que cobre os fundamentos e técnicas avançadas de desenvolvimento web, com foco em HTML, CSS e JavaScript. Por meio de aulas teóricas, exemplos práticos e exercícios, os estudantes aprendem a criar interfaces web modernas, responsivas e interativas. O curso inclui recursos como ferramentas CSS, configurações de Node.js e projetos integradores para aplicar os conhecimentos adquiridos. Com uma abordagem prática, os participantes desenvolvem habilidades para projetar e programar sites eficientes e atrativos. Ao final, estarão preparados para enfrentar desafios reais do desenvolvimento frontend."
+    },
+    "ITEMS_2": {
+      "TITLE": "Estudante da Graduação Tecnológica em Programação - UTN",
+      "DATE": "Fevereiro de 2024",
+      "DESCRIPTION": "Em Programação 1 e 2 na UTN, aprendi os fundamentos de C++, desde variáveis, condicionais e laços até memória dinâmica, ponteiros, estruturas de dados e programação orientada a objetos (POO). Durante os semestres, foram realizados exercícios práticos, trabalhos em equipe e projetos integradores finais, nos quais aplicamos os conhecimentos para resolver problemas complexos e desenvolver aplicações completas. Utilizei bibliotecas padrão, manipulação de arquivos e técnicas de depuração, fortalecendo habilidades técnicas e de colaboração. Como resultado, adquiri uma base sólida para projetar soluções robustas e trabalhar de forma eficiente em equipe."
+    },
+    "ITEMS_1": {
+      "TITLE": "Estudante Autodidata",
+      "DATE": "Maio de 2023",
+      "DESCRIPTION": "Curso introdutório de C# focado nos fundamentos da programação, desde conceitos básicos como variáveis e condicionais até temas avançados como funções, vetores e matrizes. Por meio desse curso, iniciei minha trajetória na programação, adquirindo as bases sólidas e necessárias para desenvolver aplicações simples de console. Ministrado por MaxiPrograma, professor da UTN."
+    },
+    "BUTTON": "Saber mais..."
+  },
+
+  "PROJECTS": {
+    "TITLE": "Projetos",
+    "ITEMS_7": {
+      "TITLE": "Página de Notícias Moderna",
+      "DESCRIPTION": "Projeto de página de notícias moderna desenvolvido com Astro e TailwindCSS, projetado para oferecer uma experiência rápida e responsiva. Integra suporte a MDX, processamento de imagens com Sharp e está preparado com TypeScript para um desenvolvimento escalável e seguro. Inclui configurações prontas para desenvolvimento, build e visualização, além de ferramentas de formatação como Prettier e plugins específicos do Astro para manter o código limpo e consistente."
+    },
+    "ITEMS_6": {
+      "TITLE": "Carrinho de Compras, Aplicação Full Stack",
+      "DESCRIPTION": "Loja online completa desenvolvida como projeto final do curso de React no Talento Tech. A aplicação inclui autenticação de usuários, carrinho de compras, busca de produtos e consumo de uma API REST própria, implementada com Node.js e Firebase para a gestão completa do catálogo."
+    },
+    "ITEMS_5": {
+      "TITLE": "Projeto de Evento Gamer",
+      "DESCRIPTION": "Projeto web de evento gamer desenvolvido com Astro, TypeScript e Tailwind CSS. Inclui navegação rápida e moderna, suporte multilíngue (inglês e espanhol) com i18n, seções de arena, categorias e contato. Totalmente responsivo e adaptável a dispositivos móveis, laptops e desktops, oferecendo uma experiência fluida e envolvente para os usuários."
+    },
+    "ITEMS_4": {
+      "TITLE": "Landing Page de Motos",
+      "DESCRIPTION": "O projeto Clon-Tesla-Landing é um exemplo de uma landing page da Tesla, especificamente uma versão para motos. Este projeto foi desenvolvido utilizando HTML, CSS, JavaScript, Astro e Tailwind. A maior parte do código está escrita em Astro, com pequenos componentes em JavaScript e estilos em CSS. Este projeto é ideal para aprender sobre a integração dessas tecnologias em uma aplicação web."
+    },
+    "ITEMS_3": {
+      "TITLE": "Livros Recomendados",
+      "DESCRIPTION": "Este projeto, Livros Recomendados, utiliza tecnologias como HTML, JavaScript, CSS, Tailwind e Astro. Ele foi projetado para recomendar livros e apresenta uma imagem de destaque de livros em sua página inicial. Possui uma estrutura de pastas organizada para gerenciar conteúdo e estilos de forma eficiente. O projeto utiliza Astro para otimizar a geração de páginas estáticas e dinâmicas."
+    },
+    "ITEMS_2": {
+      "TITLE": "Carrinho de Compras",
+      "DESCRIPTION": "O projeto final do curso de desenvolvimento Front End oferecido pelo Talento Tech tem como objetivo aplicar os conhecimentos adquiridos ao longo do curso por meio da criação de um site funcional e atraente. Utilizando tecnologias como HTML, CSS, JavaScript e Bootstrap CSS, oferece uma interface moderna e responsiva que permite aos usuários interagir de forma eficaz com a plataforma."
+    },
+    "ITEMS_1": {
+      "TITLE": "Loja Virtual de PCs Gamers e Componentes",
+      "DESCRIPTION": "Este projeto consiste no desenvolvimento de uma loja virtual de PCs gamers utilizando HTML, CSS, JavaScript e Bootstrap. O objetivo principal é oferecer uma experiência de usuário intuitiva e atraente para explorar, personalizar e adquirir equipamentos de alto desempenho projetados para jogos."
+    }
+  },
+
+  "ABOUT": {
+    "TITLE": "Sobre Mim",
+    "PARAGRAPH_1": {
+      "P_1": "Meu nome é Sergio, mas meus amigos me chamam de Sope. Comecei na programação como autodidata, por meio de cursos e vídeos no YouTube, e tenho 37 anos. Atualmente estou ",
+      "P_2": "estudando na Universidade Nacional do Nordeste – Faculdade de Engenharia"
+    },
+    "PARAGRAPH_2": {
+      "P_1": "Alguns dos meus trabalhos incluem ",
+      "P_2": "desenvolvimento de aplicações web e trabalhos em grupo na universidade",
+      "P_3": ". Além disso, participo ativamente dos ",
+      "P_4": "fóruns",
+      "P_5": " da universidade, onde compartilho meus conhecimentos e experiências."
+    },
+    "PARAGRAPH_3": {
+      "P_1": "Como estudante da ",
+      "P_2": " Universidade Nacional do Nordeste,",
+      "P_3": " combinei minha formação acadêmica com minha experiência prática no desenvolvimento de aplicações web e em trabalhos colaborativos na ",
+      "P_4": "faculdade. ",
+      "P_5": "Além disso, tive a oportunidade de compartilhar meus conhecimentos e experiências nos fóruns universitários, ajudando outros estudantes a resolver dúvidas e incentivando o aprendizado em equipe."
+    }
+  },
+
+  "SKILLS": {
+    "TITLE": "Habilidades Técnicas"
+  },
+
+  "CONTACT": {
+    "TITLE": "Contato",
+    "FORM": {
+      "TITLE": "Formulário de Contato",
+      "DIV_1": {
+        "LABEL_1": "Nome e Sobrenome",
+        "INPUT_1": "Digite seu nome e sobrenome"
+      },
+      "DIV_2": {
+        "LABEL_2": "E-mail",
+        "INPUT_2": "nome@exemplo.com",
+        "P": "Digite um endereço de e-mail válido."
+      },
+      "DIV_3": {
+        "LABEL_3": "Sua Mensagem",
+        "TEXTAREA": "Digite sua mensagem aqui..."
+      },
+      "BUTTON": "Enviar"
+    }
+  },
+
+  "FOOTER": {
+    "SPAN": ". Todos os direitos reservados.",
+    "WHATSAPP": "WhatsApp",
+    "CV": "Currículo"
+  }
+}

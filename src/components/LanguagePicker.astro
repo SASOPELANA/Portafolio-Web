@@ -1,0 +1,102 @@
+---
+import SpainIcon from "./icons/SpainIcon.astro";
+import USAIcon from "./icons/USAIcon.astro";
+import BrazilIcon from "./icons/BrazilIcon.astro";
+
+const { currentLocale } = Astro;
+
+const LANGUAGES = [
+  {
+    code: "es",
+    name: "Español",
+    href: "/es/",
+    icon: SpainIcon,
+  },
+  {
+    code: "en",
+    name: "English",
+    href: "/en/",
+    icon: USAIcon,
+  },
+  {
+    code: "pt-br",
+    name: "Português",
+    href: "/pt-br/",
+    icon: BrazilIcon,
+  },
+];
+
+const currentLanguage =
+  LANGUAGES.find((lang) => lang.code === currentLocale) || LANGUAGES[0];
+---
+
+<details class="relative inline-block text-left">
+  <summary
+    class="flex list-none items-center gap-x-1 sm:gap-x-2 px-2 py-1 text-sm font-bold text-white/90 hover:text-yellow-200 transition-all"
+    id="language-button"
+    aria-expanded="true"
+    aria-haspopup="true"
+  >
+    <currentLanguage.icon class="size-5 rounded-sm" />
+    <span class="hidden md:inline">{currentLanguage.name}</span>
+    <svg
+      class="w-4 h-4 transition-transform"
+      aria-hidden="true"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </summary>
+
+  <ul
+    class="absolute left-1/2 -translate-x-1/2 z-50 pt-2 w-32 animate-fade-in-down overflow-hidden bg-black/90 border border-white/10 rounded-xl backdrop-blur-md shadow-xl"
+  >
+    {
+      LANGUAGES.filter((lang) => lang.code !== currentLocale).map((lang) => (
+        <li>
+          <a
+            href={lang.href}
+            class="flex items-center gap-x-2 px-3 py-2 text-sm text-white hover:bg-white/10 transition-colors"
+          >
+            <lang.icon class="size-4 rounded-sm" />
+            {lang.name}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</details>
+
+<style>
+  details[open] > summary svg {
+    transform: rotate(180deg);
+  }
+
+  summary {
+    list-style: none;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  @keyframes fade-in-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-fade-in-down {
+    animation: fade-in-down 0.2s ease-out;
+  }
+</style>

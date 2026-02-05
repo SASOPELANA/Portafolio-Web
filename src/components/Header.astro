@@ -1,0 +1,33 @@
+---
+import { getI18n } from "@/i18n";
+import LanguagePicker from "./LanguagePicker.astro";
+
+const { currentLocale } = Astro;
+const i18n = getI18n({ currentLocale });
+---
+
+<header
+  class="flex justify-center items-center py-5 w-full xl:w-[1120px] mx-auto mb-6 relative"
+>
+  <span></span>
+
+  <nav
+    class="fixed flex flex-row z-50
+    rounded-full bg-black/80 text-white/90
+    gap-x-2 sm:gap-x-5 text-sm sm:text-base overflow-x-auto whitespace-nowrap font-bold p-3"
+  >
+    <a href="#top" class="hover:text-yellow-200">{i18n.HEADER.TOP}</a>
+    <a href="#experience" class="hover:text-yellow-200"
+      >{i18n.HEADER.EXPERIENCE}</a
+    >
+    <a href="#projects" class="hover:text-yellow-200">{i18n.HEADER.PROJECTS}</a>
+    <a href="#about" class="hover:text-yellow-200">{i18n.HEADER.ABOUT}</a>
+    <a href="#contact" class="hover:text-yellow-200">{i18n.HEADER.CONTACT}</a>
+  </nav>
+
+  <div
+    class="absolute right-1/2 translate-x-1/2 top-12 md:top-0 md:right-0 md:translate-x-0 z-50 cursor-pointer"
+  >
+    <LanguagePicker />
+  </div>
+</header>

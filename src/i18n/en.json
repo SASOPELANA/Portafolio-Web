@@ -1,0 +1,143 @@
+{
+  "SEO": {
+    "TITLE": "Sergio's Portfolio - FullStack Developer - JavaScript - TypeScript",
+    "DESCRIPTION": "Hire SergioDev to build your web applications and content. Student of the University Technical Degree in Computer Science - UNNE"
+  },
+  "HEADER": {
+    "TOP": "Home",
+    "EXPERIENCE": "Experience",
+    "PROJECTS": "Projects",
+    "ABOUT": "About me",
+    "CONTACT": "Contact"
+  },
+  "TOP": {
+    "H1": {
+      "P1": "Hi, I'm Sergio",
+      "P2": "Available for work"
+    },
+    "H2": {
+      "SPAN_1": "Student of the University Technical Degree in Computer Science - UNNE.",
+      "SPAN_2": "I am looking for my first job as a",
+      "SPAN_3": "FullStack Developer",
+      "SPAN_4": {
+        "P1": "with a focus on",
+        "P2": "JavaScript and TypeScript, with experience in React and Node.js, using SQL and NoSQL databases",
+        "P3": ". From San Ramón de la Nueva Orán - Salta, Argentina 🇦🇷.",
+        "P4": "Currently focused on Backend development, eager to learn and grow professionally."
+      }
+    }
+  },
+  "EXPERIENCE": {
+    "TITLE": "Experience in scalable application development. Freelance.",
+    "ITEMS_5": {
+      "TITLE": "Web Development Course with React.js",
+      "DATE": "August 2025",
+      "DESCRIPTION": "Final project of the React course with Talento Tech: a complete online store with user authentication, persistent shopping cart, product search and filtering, consumption of a custom REST API, and protected routes. Built with React, Vite, and Tailwind CSS, the application is fully responsive, optimized for Vercel, and reflects best practices in modern frontend development, global state management, and user experience."
+    },
+    "ITEMS_4": {
+      "TITLE": "Node.js and Express.js Course with Firebase as Database",
+      "DATE": "March 2025",
+      "DESCRIPTION": "Final project of the Talento Tech Node.js course: a REST API for product management that combines Firebase as the main database with a local JSON file for specific searches and updates. It implements secure authentication with JWT and is organized using routes, controllers, middlewares, and services, reflecting best practices in backend and scalable development."
+    },
+    "ITEMS_3": {
+      "TITLE": "Web Development Course with HTML, CSS, and JavaScript. Astro and Tailwind CSS",
+      "DATE": "August 2024",
+      "DESCRIPTION": "The Talento Tech Frontend Course is a comprehensive program that covers the fundamentals and advanced techniques of web development, focusing on HTML, CSS, and JavaScript. Through theoretical classes, practical examples, and exercises, students learn to build modern, responsive, and interactive web interfaces. The course includes resources such as CSS tools, Node.js configurations, and integrative projects to apply acquired knowledge. With a hands-on approach, participants develop skills to design and program efficient and attractive websites. Upon completion, they are prepared to face real-world frontend development challenges."
+    },
+    "ITEMS_2": {
+      "TITLE": "Student of the University Technical Degree in Programming - UTN",
+      "DATE": "February 2024",
+      "DESCRIPTION": "In Programming 1 and 2 at UTN, I learned the fundamentals of C++, from variables, conditionals, and loops to dynamic memory, pointers, data structures, and object-oriented programming (OOP). Throughout the semesters, the program included practical exercises, teamwork, and final integrative projects, where we applied our knowledge to solve complex problems and develop complete applications. I used standard libraries, file handling, and debugging techniques, strengthening both technical and collaboration skills. As a result, I acquired a solid foundation to design robust solutions and work efficiently in a team."
+    },
+    "ITEMS_1": {
+      "TITLE": "Self-Taught Student",
+      "DATE": "May 2023",
+      "DESCRIPTION": "Introductory C# course focused on programming fundamentals, from basic concepts such as variables and conditionals to advanced topics like functions, vectors, and matrices. Through this course, I began my journey into programming, acquiring the solid and necessary foundations to develop simple console applications. Taught by MaxiPrograma, a UTN professor."
+    },
+    "BUTTON": "Learn more..."
+  },
+
+  "PROJECTS": {
+    "TITLE": "Projects",
+    "ITEMS_7": {
+      "TITLE": "Modern News Website",
+      "DESCRIPTION": "Modern news website project developed with Astro and TailwindCSS, designed to deliver a fast and responsive experience. It integrates MDX support, image processing with Sharp, and is fully prepared with TypeScript for scalable and secure development. Includes ready-to-use development, build, and preview configurations, along with formatting tools like Prettier and Astro-specific plugins to keep the code clean and consistent."
+    },
+    "ITEMS_6": {
+      "TITLE": "Shopping Cart, Full Stack Application",
+      "DESCRIPTION": "Complete online store developed as the final project of the React course at Talento Tech. The application includes user authentication, shopping cart functionality, product search, and consumption of a custom REST API, implemented with Node.js and Firebase for full catalog management."
+    },
+    "ITEMS_5": {
+      "TITLE": "Gamer Event Project",
+      "DESCRIPTION": "Web project for a gamer event developed with Astro, TypeScript, and Tailwind CSS. It includes fast and modern navigation, multilingual support (English and Spanish) with i18n, arena sections, categories, and contact pages. Fully responsive and adaptable to mobile devices, laptops, and desktops, delivering a smooth and engaging user experience."
+    },
+    "ITEMS_4": {
+      "TITLE": "Motorcycle Landing Page",
+      "DESCRIPTION": "The Clon-Tesla-Landing project is an example of a Tesla landing page, specifically a version for motorcycles. This project is developed using HTML, CSS, JavaScript, Astro, and Tailwind. Most of the code is written in Astro, with small JavaScript components and CSS styles. This project is ideal for learning how to integrate these technologies in a web application."
+    },
+    "ITEMS_3": {
+      "TITLE": "Recommended Books",
+      "DESCRIPTION": "This project, Recommended Books, uses technologies such as HTML, JavaScript, CSS, Tailwind, and Astro. It is designed to recommend books and features a highlighted book image on its homepage. It has an organized folder structure to efficiently manage content and styles. The project uses Astro to optimize the generation of static and dynamic pages."
+    },
+    "ITEMS_2": {
+      "TITLE": "Shopping Cart",
+      "DESCRIPTION": "The final project of the Front End development course provided by Talento Tech aims to apply the knowledge acquired throughout the course by creating a functional and attractive website. Using technologies such as HTML, CSS, JavaScript, and Bootstrap CSS, it delivers a modern and responsive interface that allows users to interact effectively with the platform."
+    },
+    "ITEMS_1": {
+      "TITLE": "Virtual Store for Gaming PCs and Components",
+      "DESCRIPTION": "This project consists of developing a virtual store for gaming PCs using HTML, CSS, JavaScript, and Bootstrap. The main goal is to offer an intuitive and attractive user experience to explore, customize, and purchase high-performance systems designed for gaming."
+    }
+  },
+
+  "ABOUT": {
+    "TITLE": "About Me",
+    "PARAGRAPH_1": {
+      "P_1": "My name is Sergio, but my friends call me Sope. I started programming as a self-taught developer through courses and YouTube videos, and I am 37 years old. I am currently ",
+      "P_2": "studying at the National University of the Northeast – Faculty of Engineering"
+    },
+    "PARAGRAPH_2": {
+      "P_1": "Some of my work includes ",
+      "P_2": "web application development and group projects at the university",
+      "P_3": ". I also actively participate in the ",
+      "P_4": "forums",
+      "P_5": " of the university, where I share my knowledge and experiences."
+    },
+    "PARAGRAPH_3": {
+      "P_1": "As a student at the ",
+      "P_2": " National University of the Northeast,",
+      "P_3": " I have combined my academic background with practical experience in web application development and collaborative projects at the ",
+      "P_4": "faculty. ",
+      "P_5": "Additionally, I have had the opportunity to share my knowledge and experiences in university forums, helping other students solve problems and encouraging teamwork and collaborative learning."
+    }
+  },
+  "SKILLS": {
+    "TITLE": "Technical Skills"
+  },
+
+  "CONTACT": {
+    "TITLE": "Contact",
+    "FORM": {
+      "TITLE": "Contact Form",
+      "DIV_1": {
+        "LABEL_1": "Full Name",
+        "INPUT_1": "Enter your full name"
+      },
+      "DIV_2": {
+        "LABEL_2": "Email Address",
+        "INPUT_2": "name@example.com",
+        "P": "Please enter a valid email address."
+      },
+      "DIV_3": {
+        "LABEL_3": "Your Message",
+        "TEXTAREA": "Enter your message here..."
+      },
+      "BUTTON": "Send"
+    }
+  },
+
+  "FOOTER": {
+    "SPAN": ". All rights reserved.",
+    "WHATSAPP": "WhatsApp",
+    "CV": "Resume"
+  }
+}
