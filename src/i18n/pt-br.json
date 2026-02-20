@@ -59,6 +59,10 @@
 
   "PROJECTS": {
     "TITLE": "Projetos",
+    "ITEMS_8": {
+      "TITLE": "Landing Page de Chatbot",
+      "DESCRIPTION": "Um chatbot inteligente desenvolvido com React, TypeScript, Tailwind CSS, Node.js e Express. Este projeto demonstra como criar uma experiência de conversa fluida e envolvente utilizando tecnologias modernas. O chatbot pode responder a perguntas, fornecer informações úteis e oferecer uma interação amigável para os usuários."
+    },
     "ITEMS_7": {
       "TITLE": "Página de Notícias Moderna",
       "DESCRIPTION": "Projeto de página de notícias moderna desenvolvido com Astro e TailwindCSS, projetado para oferecer uma experiência rápida e responsiva. Integra suporte a MDX, processamento de imagens com Sharp e está preparado com TypeScript para um desenvolvimento escalável e seguro. Inclui configurações prontas para desenvolvimento, build e visualização, além de ferramentas de formatação como Prettier e plugins específicos do Astro para manter o código limpo e consistente."

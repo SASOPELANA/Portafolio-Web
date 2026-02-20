@@ -11,10 +11,17 @@ const { currentLocale } = Astro;
 const i18n = getI18n({ currentLocale });
 
 const projects = PROJECTS(i18n);
+
+// Índices a excluir (array vacío = mostrar todos los proyectos)
+const excludeIndices = [7]; // Puedes agregar índices: [0, 1, 2] --> -1 para no excluir ninguno
+
+const filteredProjects = projects.filter(
+  (_, index) => !excludeIndices.includes(index),
+);
 ---
 
 {
-  projects.map(
+  filteredProjects.map(
     ({ title, description, tags, image, link, github }): Project => (
       <article class="mb-8">
         <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>

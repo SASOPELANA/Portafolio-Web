@@ -11,6 +11,9 @@ import ReactIcon from "../components/icons/React.astro";
 import FirebaseIcon from "../components/icons/Firebase.astro";
 import JwtIcon from "../components/icons/JwtIcon.astro";
 import ExpressIcon from "../components/icons/ExpressIcon.astro";
+import GroqIcon from "@/components/icons/GroqIcon.astro";
+import VercelIcon from "@/components/icons/VercelIcon.astro";
+import ViteIcon from "@/components/icons/ViteIcon.astro";
 
 import type { Project, I18nProjects } from "../types/projects.types";
 
@@ -81,6 +84,21 @@ const TAGS = {
     class: "bg-[#fff] text-[#000] font-bold",
     icon: ExpressIcon,
   },
+  GROQ: {
+    name: "GROQ",
+    class: "bg-[#fff] text-[#000] font-bold",
+    icon: GroqIcon,
+  },
+  VERCEL: {
+    name: "Vercel",
+    class: "bg-[#fff] text-[#000] font-bold",
+    icon: VercelIcon,
+  },
+  VITE: {
+    name: "Vite",
+    class: "bg-[#fff] text-[#000] font-bold",
+    icon: ViteIcon,
+  },
 };
 
 import ImagenCss from "../../public/imagen/proyecto-css.webp";
@@ -90,8 +108,27 @@ import ImagenLanding from "../../public/imagen/landing-motos.webp";
 import ImageEventoGamer from "../../public/imagen/imagen-evento-gamer.webp";
 import ImageReact from "../../public/imagen/react-node.webp";
 import ImageNoticias from "../../public/imagen/pagina-noticia-moderna.webp";
+import ImageChatBot from "../../public/imagen/chat-bot-page.webp";
 
 export const PROJECTS = (i18n: I18nProjects): Project[] => [
+  {
+    title: i18n.PROJECTS.ITEMS_8.TITLE,
+    description: i18n.PROJECTS.ITEMS_8.DESCRIPTION,
+    link: "https://chat-bot-landing.vercel.app",
+    github: "https://github.com/SASOPELANA/chat-bot-landing",
+    image: ImageChatBot,
+    tags: [
+      TAGS.REACT,
+      TAGS.VITE,
+      TAGS.TS,
+      TAGS.JS,
+      TAGS.TAILWIND,
+      TAGS.NODE,
+      TAGS.EXPRESS,
+      TAGS.GROQ,
+      TAGS.VERCEL,
+    ],
+  },
   {
     title: i18n.PROJECTS.ITEMS_7.TITLE,
     description: i18n.PROJECTS.ITEMS_7.DESCRIPTION,
