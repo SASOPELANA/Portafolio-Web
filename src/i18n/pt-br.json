@@ -84,8 +84,8 @@
       "DESCRIPTION": "Este projeto, Livros Recomendados, utiliza tecnologias como HTML, JavaScript, CSS, Tailwind e Astro. Ele foi projetado para recomendar livros e apresenta uma imagem de destaque de livros em sua página inicial. Possui uma estrutura de pastas organizada para gerenciar conteúdo e estilos de forma eficiente. O projeto utiliza Astro para otimizar a geração de páginas estáticas e dinâmicas."
     },
     "ITEMS_2": {
-      "TITLE": "Carrinho de Compras",
-      "DESCRIPTION": "O projeto final do curso de desenvolvimento Front End oferecido pelo Talento Tech tem como objetivo aplicar os conhecimentos adquiridos ao longo do curso por meio da criação de um site funcional e atraente. Utilizando tecnologias como HTML, CSS, JavaScript e Bootstrap CSS, oferece uma interface moderna e responsiva que permite aos usuários interagir de forma eficaz com a plataforma."
+      "TITLE": "Carrinho de Compras (V2)",
+      "DESCRIPTION": "O projeto final do curso de desenvolvimento Front End oferecido pelo Talento Tech tem como objetivo aplicar os conhecimentos adquiridos ao longo do curso por meio da criação de um site funcional e atraente. Utilizando tecnologias como HTML, CSS, JavaScript e Bootstrap CSS, oferece uma interface moderna e responsiva que permite aos usuários interagir de forma eficaz com a plataforma.\n\nAgora é a versão 2 e inclui melhorias implementadas com OpenCode, Skills e Copilot."
     },
     "ITEMS_1": {
       "TITLE": "Loja Virtual de PCs Gamers e Componentes",

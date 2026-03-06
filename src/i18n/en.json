@@ -84,8 +84,8 @@
       "DESCRIPTION": "This project, Recommended Books, uses technologies such as HTML, JavaScript, CSS, Tailwind, and Astro. It is designed to recommend books and features a highlighted book image on its homepage. It has an organized folder structure to efficiently manage content and styles. The project uses Astro to optimize the generation of static and dynamic pages."
     },
     "ITEMS_2": {
-      "TITLE": "Shopping Cart",
-      "DESCRIPTION": "The final project of the Front End development course provided by Talento Tech aims to apply the knowledge acquired throughout the course by creating a functional and attractive website. Using technologies such as HTML, CSS, JavaScript, and Bootstrap CSS, it delivers a modern and responsive interface that allows users to interact effectively with the platform."
+      "TITLE": "Shopping Cart (V2)",
+      "DESCRIPTION": "The final project of the Front End development course provided by Talento Tech aims to apply the knowledge acquired throughout the course by creating a functional and attractive website. Using technologies such as HTML, CSS, JavaScript, and Bootstrap CSS, it delivers a modern and responsive interface that allows users to interact effectively with the platform.\n\nIt is now version 2 and includes improvements implemented with OpenCode, Skills, and Copilot."
     },
     "ITEMS_1": {
       "TITLE": "Virtual Store for Gaming PCs and Components",

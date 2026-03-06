@@ -14,6 +14,8 @@ import ExpressIcon from "../components/icons/ExpressIcon.astro";
 import GroqIcon from "@/components/icons/GroqIcon.astro";
 import VercelIcon from "@/components/icons/VercelIcon.astro";
 import ViteIcon from "@/components/icons/ViteIcon.astro";
+import OpencodeIcon from "@/components/icons/OpencodeIcon.astro";
+import CopilotIcons from "@/components/icons/CopilotIcon.astro";
 
 import type { Project, I18nProjects } from "../types/projects.types";
 
@@ -98,6 +100,16 @@ const TAGS = {
     name: "Vite",
     class: "bg-[#fff] text-[#000] font-bold",
     icon: ViteIcon,
+  },
+  OPENCODE: {
+    name: "Opencode",
+    class: "bg-[#fff] text-[#000] font-bold",
+    icon: OpencodeIcon,
+  },
+  COPILOT: {
+    name: "Copilot",
+    class: "bg-[#fff] text-[#000] font-bold",
+    icon: CopilotIcons,
   },
 };
 
@@ -200,7 +212,15 @@ export const PROJECTS = (i18n: I18nProjects): Project[] => [
     link: "https://proyecto-final-talento-tech-rose.vercel.app/",
     github: "https://github.com/SASOPELANA/ProyectoFinal-TalentoTech",
     image: ImagenCarrito,
-    tags: [TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.BOOTSTRAP],
+    tags: [
+      TAGS.HTML,
+      TAGS.CSS,
+      TAGS.JS,
+      TAGS.BOOTSTRAP,
+      TAGS.VITE,
+      TAGS.OPENCODE,
+      TAGS.COPILOT,
+    ],
   },
   {
     title: i18n.PROJECTS.ITEMS_1.TITLE,

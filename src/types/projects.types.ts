@@ -25,6 +25,7 @@ export interface I18nProjects {
     ITEMS_5: ProjectItem;
     ITEMS_6: ProjectItem;
     ITEMS_7: ProjectItem;
+    ITEMS_8: ProjectItem;
   };
 }
 
